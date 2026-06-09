@@ -1,28 +1,32 @@
-gsap.from("#navbar", {
-    y: -100,
-    delay: 0.8,
-    duration: 1,
-    opacity: 0
-})
+if (window.innerWidth > 768) {
+    gsap.from("#navbar", {
+        y: -100,
+        delay: 0.8,
+        duration: 1,
+        opacity: 0
+    })
 
-gsap.from("#navbar #details a", {
-    y: -150,
-    delay: 1,
-    duration: 1,
-    opacity: 0,
-    stagger: 0.5
-})
+    gsap.from("#navbar #details a", {
+        y: -150,
+        delay: 1,
+        duration: 1,
+        opacity: 0,
+        stagger: 0.5
+    })
 
-gsap.from("#center-icon", {
-    z: -200,
-    delay: 2.2,
-    duration: 1,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: "#skills #center-icon",
-        scroller: "body",
-    }
-})
+    gsap.from("#center-icon", {
+        z: -200,
+        delay: 2.2,
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#skills #center-icon",
+            scroller: "body",
+        }
+    })
+
+}
+
 
 gsap.from("#git", {
     x: -200,
@@ -71,9 +75,12 @@ gsap.from("#vs", {
 })
 
 gsap.from("#html", {
-    y: 200,
-    delay: 3,
+    y: 100,
+    delay: 0.8,
     duration: 1,
     opacity: 0,
-    scrollTrigger: true
+    scrollTrigger: {
+        trigger: "#skills #html",
+        scroller: "body",
+    }
 })

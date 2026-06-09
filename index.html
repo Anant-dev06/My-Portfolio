@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anant Shrotriya</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,17 +15,25 @@
             <h1>A.S</h1>
         </div>
         <div id="right-nav">
+            <div id="menu-icon">
+                <i class="ri-menu-line"></i>
+            </div>
             <div id="details">
                 <a href="#">About</a>
                 <a href="#">Skills</a>
                 <a href="#">Projects</a>
                 <a href="#">Contacts</a>
             </div>
+            <div id="menu-icon">
+                <i class="ri-menu-line"></i>
+            </div>
         </div>
     </div>
     <div id="hero">
         <!-- <div id="circle"></div> -->
-        <img id="my-img" src="my-ppf.png">
+        <div id="circle">
+            <img id="my-img" src="my-ppf.png">
+        </div>
         <div id="intro">
             <h1 id="hrhead">HI THERE!</h1>
             <h1 id="name">I'M <span>ANANT SHROTRIYA</span></h1>
@@ -116,27 +125,28 @@
                 <form action="https://formspree.io/f/xaqzylkq" method="POST">
                     <label>
                         <h1>Your Name:</h1>
-                        <input class="bx" type="name" name="Your Name">
+                        <input class="bx" type="name" name="Name">
                     </label><br>
                     <label>
                         <h1>Your Experience:</h1>
-                        <select id="slct">
-                            <option>Select</option>
-                            <option>Smooth</option>
-                            <option>Good</option>
-                            <option>Average</option>
-                            <option>Not Good</option>
-                        </select>
+                        <input class="bx" type="experience" name="Experience">
                     </label><br>
                     <label>
                         <h1>Your Message:</h1>
-                        <textarea class="tx" name="message"></textarea>
+                        <textarea class="tx" name="Message"></textarea>
                     </label><br>
                     <button id="subbtn" type="submit">Send</button>
                 </form>
             </div>
         </div>
-        <div id="meet"></div>
+        <div id="meet">
+            <h1 id="cont">Contacts:</h1>
+            <i class="ri-phone-fill"> +91 9259464581</i>
+            <i class="ri-linkedin-box-fill"> Linkedin</i>
+            <i class="ri-github-fill"> GitHub</i>
+            <i class="ri-map-pin-line"> Delhi, India</i>
+
+        </div>
     </div>
 
 
