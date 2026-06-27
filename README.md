@@ -2,7 +2,7 @@
 
 > "Building for the world, dreaming of Tokyo." 🎌
 
-A personal portfolio website built with **HTML, CSS, JavaScript & GSAP** — showcasing my projects, skills, and journey as a frontend developer.
+A personal portfolio website built with **HTML, CSS, JavaScript & GSAP with Lenis** — showcasing my projects, skills, and journey as a frontend developer.
 
 ---
 
