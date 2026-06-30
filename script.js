@@ -1,3 +1,16 @@
+// Lenis CDN
+const lenis = new Lenis({
+    duration: 1.8,
+    wheelMultiplier: 0.7,
+    smoothWheel: true,
+});
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// Nav bar gsap animation
 if (window.innerWidth > 768) {
     gsap.from("#navbar", {
         y: -100,
@@ -21,12 +34,11 @@ if (window.innerWidth > 768) {
         opacity: 0,
         scrollTrigger: {
             trigger: "#skills #center-icon",
-            scroller: "body",
+            scroller: "#main",
         }
     })
 
 }
-
 
 gsap.from("#git", {
     x: -200,
@@ -37,7 +49,7 @@ gsap.from("#git", {
         trigger: "#skills #git",
         scroller: "body",
         markers: false,
-        start: "top 45%"
+        start: "top 45%",
     }
 })
 
@@ -59,7 +71,7 @@ gsap.from("#css", {
     opacity: 0,
     scrollTrigger: {
         trigger: "#skills #css",
-        scroller: "body",
+        scroller: "#main",
     }
 })
 

@@ -11,6 +11,11 @@ body {
     background-color: rgb(251, 251, 250);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#main {
+    width: 100dvw;
 }
 
 #navbar {
@@ -53,7 +58,7 @@ body {
     padding: 12px;
 }
 
-#menu-icon {
+#m-icon {
     display: none;
 }
 
@@ -79,9 +84,18 @@ body {
     }
 
     #right-nav {
-        height: 100%;
-        width: 60%;
+        align-self: center;
+        height: 5dvh;
+        width: 20%;
         border: 1px solid transparent;
+        background-color: transparent;
+    }
+
+    #right-navi {
+        position: absolute;
+        font-size: xx-large;
+        font-weight: 600;
+        color: black;
     }
 
     #details {
@@ -91,11 +105,6 @@ body {
     #details a {
         display: none;
     }
-
-    #menu-icon i {
-        height: 30px;
-        width: auto;
-    }
 }
 
 #hero {
@@ -104,9 +113,6 @@ body {
     width: 100%;
     background-color: rgb(251, 251, 250);
 }
-
-
-
 
 #my-img {
     position: absolute;
@@ -164,7 +170,7 @@ body {
     #hero {
         position: relative;
         top: 0%;
-        height: 40dvh;
+        height: 50dvh;
         width: 100%;
         background-color: rgb(214, 214, 147);
     }
@@ -218,7 +224,7 @@ body {
         height: fit-content;
         width: fit-content;
         font-size: small;
-        top: 72%;
+        top: 74%;
         left: 8%;
         padding: 5px;
         border-radius: 10px;
@@ -229,7 +235,7 @@ body {
     #herobtn {
         position: absolute;
         top: 85%;
-        left: 40%;
+        left: 35%;
         height: 5dvh;
         width: 30dvw;
         font-size: 16px;
@@ -371,6 +377,142 @@ body {
     margin-top: 10px;
     text-align: center;
     font-size: 45px;
+}
+
+@media (max-width: 600px) {
+    #page1 {
+        position: relative;
+        height: 50dvh;
+        width: 100%;
+        background-color: rgb(232, 235, 237);
+    }
+
+    #card {
+        position: absolute;
+        top: 26.5%;
+        left: 3.5%;
+        height: 51.1dvh;
+        width: 19.2dvw;
+        overflow: hidden;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    #image {
+        position: absolute;
+        top: 48%;
+        left: 6%;
+        width: 17dvw;
+        height: 25dvh;
+        border-radius: 50px;
+        background-image: url("about-ppf.png");
+        background-color: burlywood;
+        background-position: top;
+        background-size: cover;
+    }
+
+    #role {
+        position: absolute;
+        top: 30%;
+        left: 12%;
+        height: 5.5dvh;
+        width: 15dvw;
+        border: 2px solid black;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+
+    #role h1 {
+        font-size: large;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    #nh {
+        position: absolute;
+        top: 15;
+        left: 5%;
+        font-size: 40px;
+    }
+
+    #hang {
+        height: 80dvh;
+        width: auto;
+        position: absolute;
+        left: 2%;
+    }
+
+    #ab-btm {
+        position: absolute;
+        bottom: 2%;
+        left: 4%;
+        height: 20dvh;
+    }
+
+    #about-tp {
+        position: absolute;
+        top: -6%;
+        right: -2%;
+        height: 40dvh;
+        rotate: 20deg;
+    }
+
+    #about {
+        position: absolute;
+        top: 7%;
+        right: 3%;
+        height: 90dvh;
+        width: 70dvw;
+        /* background-color: hotpink; */
+        border: 2px solid transparent;
+        border-radius: 10px;
+    }
+
+    #about-txt {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        height: 85%;
+        width: 85%;
+    }
+
+    #hl {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #nme {
+        font-size: 60px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 300;
+    }
+
+    #para {
+        margin-top: 15px;
+        font-size: larger;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    #ln {
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        height: 5.5dvh;
+        width: 10dvw;
+        border: 3px solid gray;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    #hd {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 45px;
+    }
 }
 
 #skills {
