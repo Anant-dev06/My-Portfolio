@@ -702,6 +702,97 @@ body {
     cursor: pointer;
 }
 
+#pro-detail {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 88%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#card-view {
+    height: 93%;
+    width: 95%;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    transform: translate(2%);
+    gap: 10px;
+
+
+}
+
+.pro-card {
+    height: 40%;
+    width: 48%;
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* align-self: center; */
+    display: flex;
+    overflow: hidden;
+}
+
+.pro-left {
+    height: 100%;
+    width: 40%;
+    background-color: aquamarine;
+}
+
+.pro-right {
+    height: 100%;
+    width: 60%;
+    background-color: brown;
+}
+
+.pro-h {
+    height: 20%;
+    width: 100%;
+    background-color: blue;
+    font-size: larger;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.pro-p {
+    height: 50%;
+    width: 100%;
+    background-color: darkolivegreen;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.pro-btn {
+    height: 5dvh;
+    width: 8dvw;
+    font-size: large;
+    border: 3px solid gray;
+    border-radius: 10px;
+    transform: translate(100%);
+    margin-top: 10px;
+}
+
+#pro-more {
+    height: 4dvh;
+    width: 100%;
+    background-color: darkorchid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#more-p {
+    font-size: large;
+}
+
 #contacts {
     position: relative;
     height: 100dvh;
