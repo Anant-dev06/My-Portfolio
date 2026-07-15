@@ -114,6 +114,38 @@ body {
     background-color: rgb(251, 251, 250);
 }
 
+#backdrop-1 {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    height: 50dvh;
+    opacity: 10%;
+}
+
+#backdrop-2 {
+    position: absolute;
+    top: -35%;
+    right: 35%;
+    height: 50dvh;
+    opacity: 10%;
+}
+
+#backdrop-3 {
+    position: absolute;
+    top: -6%;
+    right: -5%;
+    height: 30dvh;
+    opacity: 10%;
+}
+
+#backdrop-4 {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    height: 50dvh;
+    opacity: 10%;
+}
+
 #my-img {
     position: absolute;
     bottom: 0;
@@ -707,25 +739,24 @@ body {
     right: 0;
     height: 100%;
     width: 88%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #card-view {
     height: 93%;
     width: 95%;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.378);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-self: center;
     transform: translate(2%);
-    gap: 10px;
-
-
+    gap: 20px;
+    border-radius: 10px;
 }
 
 .pro-card {
@@ -793,11 +824,18 @@ body {
     font-size: large;
 }
 
+#pro-img {
+    position: absolute;
+    height: 220px;
+    top: 30%;
+    left: 41%;
+}
+
 #contacts {
     position: relative;
     height: 100dvh;
     width: screen;
-    background-color: ghostwhite;
+    background-color: rgb(195, 193, 193);
 }
 
 #see-off {
@@ -834,6 +872,11 @@ body {
     font-weight: 400;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a-link {
+    text-decoration: none;
+    color: black;
 }
 
 #frm {
@@ -957,6 +1000,6 @@ body {
     top: 10%;
     height: 68dvh;
     width: 60dvw;
-    background-color: antiquewhite;
+    background-color: rgba(218, 216, 216, 0.582);
     border-radius: 10px;
 }
