@@ -318,7 +318,7 @@ body {
     width: 17dvw;
     height: 25dvh;
     border-radius: 50px;
-    background-image: url("about-ppf.png");
+    background-image: url("ppf1.jpg");
     background-color: burlywood;
     background-position: top;
     background-size: cover;
@@ -776,6 +776,13 @@ body {
     background-color: aquamarine;
 }
 
+#left-pro1 {
+    background-image: url("unitrade-poster.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+}
+
 .pro-right {
     height: 100%;
     width: 60%;
@@ -853,7 +860,8 @@ body {
     top: 2%;
     height: 40dvh;
     width: 20dvw;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.432);
+    backdrop-filter: blur(10px);
     border: 3px solid gray;
     border-radius: 10px;
 }
@@ -886,8 +894,9 @@ body {
     height: fit-content;
     padding: 20px;
     width: 40dvw;
-    background-color: antiquewhite;
-    border: 3px solid cornsilk;
+    background-color: rgba(46, 45, 43, 0.453);
+    backdrop-filter: blur(20px);
+    border: 3px solid rgb(59, 58, 53);
     border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
