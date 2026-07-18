@@ -19,24 +19,24 @@ body {
 }
 
 #navbar {
-    height: 10dvh;
+    height: 8dvh;
     width: 100%;
-    background-color: rgba(101, 100, 100, 0.745);
+    background-color: #1b1b19;
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
 #left-nav {
-    height: 100%;
-    width: 20%;
+    height: 90%;
+    width: 7%;
+    background-image: url("logo-port.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 3px;
 }
 
-#left-nav h1 {
-    font-size: 55px;
-    margin-left: 40px;
-    font-family: cursive;
-}
 
 #right-nav {
     height: 100%;
@@ -47,13 +47,12 @@ body {
 #details {
     height: fit-content;
     width: 100%;
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 #details a {
     text-decoration: none;
     font-size: 30px;
-    margin-top: 15px;
     color: white;
     padding: 12px;
 }
@@ -109,7 +108,7 @@ body {
 
 #hero {
     position: relative;
-    height: 90dvh;
+    height: 92dvh;
     width: 100%;
     background-color: rgb(251, 251, 250);
 }
@@ -172,7 +171,7 @@ body {
 
 #name span {
     font-size: 60px;
-    color: rgb(128, 93, 2);
+    color: rgb(162, 118, 6);
 }
 
 #ab {
@@ -190,9 +189,9 @@ body {
     width: fit-content;
     top: 42%;
     left: 8%;
-    padding: 5px;
+    padding: 10px;
     font-size: 13px;
-    background-color: rgb(236, 225, 202);
+    background-color: rgb(214, 211, 204);
     border-radius: 10px;
 }
 
@@ -745,7 +744,7 @@ body {
 }
 
 #card-view {
-    height: 93%;
+    height: 93dvh;
     width: 95%;
     background-color: rgba(240, 248, 255, 0.378);
     backdrop-filter: blur(10px);
@@ -757,11 +756,18 @@ body {
     transform: translate(2%);
     gap: 20px;
     border-radius: 10px;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    padding: 20px;
+}
+
+#card-view::-webkit-scrollbar {
+    display: none;
 }
 
 .pro-card {
     height: 40%;
-    width: 48%;
+    width: 85%;
     background-color: burlywood;
     border: 2px solid black;
     border-radius: 10px;
@@ -790,22 +796,34 @@ body {
 }
 
 .pro-h {
-    height: 20%;
+    height: 15%;
     width: 100%;
     background-color: blue;
     font-size: larger;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .pro-p {
-    height: 50%;
+    height: 35%;
     width: 100%;
     background-color: darkolivegreen;
     margin-top: 10px;
     text-align: center;
     padding: 5px;
+}
+
+.pro-lnk {
+    height: 15%;
+    width: 100%;
+    background-color: darkorchid;
+    margin-top: 10px;
+}
+
+.pro-lnk p {
+    text-align: center;
+
 }
 
 .pro-btn {
@@ -815,21 +833,11 @@ body {
     border: 3px solid gray;
     border-radius: 10px;
     transform: translate(100%);
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 25%;
 }
 
-#pro-more {
-    height: 4dvh;
-    width: 100%;
-    background-color: darkorchid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#more-p {
-    font-size: large;
-}
 
 #pro-img {
     position: absolute;

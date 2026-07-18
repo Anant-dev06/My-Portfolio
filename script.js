@@ -10,6 +10,10 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
+const lenis = new Lenis({
+    prevent: (node) => node.id === "card-view",
+});
+
 // Nav bar gsap animation
 if (window.innerWidth > 768) {
     gsap.from("#navbar", {
