@@ -14,6 +14,10 @@ body {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #main {
     width: 100dvw;
 }
