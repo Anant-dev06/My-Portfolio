@@ -8,15 +8,16 @@ html,
 body {
     height: 100%;
     width: screen;
-    background-color: rgb(251, 251, 250);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    transition: ease 1s;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
+
 
 #main {
     width: 100dvw;
@@ -24,7 +25,10 @@ body::-webkit-scrollbar {
 
 #navbar {
     height: 8dvh;
-    width: 100%;
+    width: 98%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transform: translate(1%);
     background-color: #1b1b19;
     color: white;
     display: flex;
@@ -42,16 +46,52 @@ body::-webkit-scrollbar {
 }
 
 
+#center-nav {
+    height: 100%;
+    width: fit-content;
+    border: 1px solid transparent;
+    margin-left: 80px;
+}
+
 #right-nav {
     height: 100%;
-    width: 40%;
-    border: 1px solid transparent;
+    width: 25%;
+    margin-right: 10px;
+    background-color: cadetblue;
+    display: flex;
+}
+
+/* #theme-btn {
+    height: 80%;
+    width: 18%;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: chocolate;
+    cursor: pointer;
+    font-size: x-large;
+    margin-top: 6px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s ease;
+} */
+
+
+#tgl-btn {
+    height: 80%;
+    width: 55%;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 6px;
+    margin-left: 40px;
 }
 
 #details {
     height: fit-content;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #details a {
@@ -204,8 +244,8 @@ body::-webkit-scrollbar {
     top: 65%;
     left: 8%;
     height: 6dvh;
-    width: 10dvw;
-    font-size: 22px;
+    width: 15dvw;
+    font-size: 20px;
     font-weight: 700;
     border: 3px solid black;
     border-radius: 50px;
@@ -302,83 +342,12 @@ body::-webkit-scrollbar {
     background-color: rgb(232, 235, 237);
 }
 
-#card {
-    position: absolute;
-    top: 26.5%;
-    left: 3.5%;
-    height: 51.1dvh;
-    width: 19.2dvw;
-    overflow: hidden;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-#image {
-    position: absolute;
-    top: 48%;
-    left: 6%;
-    width: 17dvw;
-    height: 25dvh;
-    border-radius: 50px;
-    background-image: url("ppf1.jpg");
-    background-color: burlywood;
-    background-position: top;
-    background-size: cover;
-}
-
-#role {
-    position: absolute;
-    top: 30%;
-    left: 12%;
-    height: 5.5dvh;
-    width: 15dvw;
-    border: 2px solid black;
-    border-radius: 50px;
-    background-color: transparent;
-}
-
-#role h1 {
-    font-size: large;
-    text-align: center;
-    margin-top: 6px;
-}
-
-#nh {
-    position: absolute;
-    top: 15;
-    left: 5%;
-    font-size: 40px;
-}
-
-#hang {
-    height: 80dvh;
-    width: auto;
-    position: absolute;
-    left: 2%;
-}
-
-#ab-btm {
-    position: absolute;
-    bottom: 2%;
-    left: 4%;
-    height: 20dvh;
-}
-
-#about-tp {
-    position: absolute;
-    top: -6%;
-    right: -2%;
-    height: 40dvh;
-    rotate: 20deg;
-}
-
 #about {
     position: absolute;
     /* top: 7%; */
     right: 3%;
     height: 90dvh;
-    width: 70dvw;
+    width: 100%;
     /* background-color: hotpink; */
     border: 2px solid transparent;
     border-radius: 10px;
@@ -386,10 +355,13 @@ body::-webkit-scrollbar {
 
 #about-txt {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 15%;
+    left: 5%;
     height: 85%;
-    width: 85%;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
 }
 
 #hl {
@@ -413,7 +385,7 @@ body::-webkit-scrollbar {
 
 #ln {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 35%;
     height: 5.5dvh;
     width: 12dvw;
