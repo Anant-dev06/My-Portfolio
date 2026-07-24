@@ -19,6 +19,8 @@ body::-webkit-scrollbar {
 }
 
 
+
+
 #main {
     width: 100dvw;
 }
@@ -50,42 +52,41 @@ body::-webkit-scrollbar {
     height: 100%;
     width: fit-content;
     border: 1px solid transparent;
-    margin-left: 80px;
+    margin-left: 95px;
 }
 
 #right-nav {
     height: 100%;
-    width: 25%;
+    width: 20%;
     margin-right: 10px;
-    background-color: cadetblue;
     display: flex;
 }
 
-/* #theme-btn {
-    height: 80%;
-    width: 18%;
-    border-radius: 50px;
-    padding: 10px;
-    background-color: chocolate;
-    cursor: pointer;
-    font-size: x-large;
-    margin-top: 6px;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center;
-    transition: transform .3s ease;
-} */
+#btn-a {
+    height: 100%;
+    width: 100%;
+}
 
 
 #tgl-btn {
     height: 80%;
     width: 55%;
     border: 3px solid black;
+    background-color: darkgray;
     border-radius: 50px;
     font-size: larger;
     font-weight: 600;
     margin-top: 6px;
     margin-left: 40px;
+}
+
+#tgl-btn:hover {
+    border: 2px solid gray;
+    background-color: gainsboro;
+}
+
+#tgl-btn:active {
+    background-color: aliceblue;
 }
 
 #details {
@@ -709,118 +710,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-#pro-detail {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 88%;
-    /* background-color: antiquewhite; */
-    display: flex;
-    flex-wrap: wrap;
-}
 
-#card-view {
-    height: 93dvh;
-    width: 95%;
-    background-color: rgba(240, 248, 255, 0.378);
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    transform: translate(2%);
-    gap: 20px;
-    border-radius: 10px;
-    overflow-y: auto;
-    overscroll-behavior: none;
-    padding: 20px;
-}
-
-#card-view::-webkit-scrollbar {
-    display: none;
-}
-
-.pro-card {
-    height: 40%;
-    width: 85%;
-    background-color: burlywood;
-    border: 2px solid black;
-    border-radius: 10px;
-    /* align-self: center; */
-    display: flex;
-    overflow: hidden;
-}
-
-.pro-left {
-    height: 100%;
-    width: 40%;
-    background-color: aquamarine;
-}
-
-#left-pro1 {
-    background-image: url("unitrade-poster.jpg");
-    background-position: center;
-    background-size: cover;
-    background-clip: border-box;
-}
-
-.pro-right {
-    height: 100%;
-    width: 60%;
-    background-color: brown;
-}
-
-.pro-h {
-    height: 15%;
-    width: 100%;
-    background-color: blue;
-    font-size: larger;
-    margin-top: 10px;
-    text-align: center;
-    padding: 10px;
-}
-
-.pro-p {
-    height: 35%;
-    width: 100%;
-    background-color: darkolivegreen;
-    margin-top: 10px;
-    text-align: center;
-    padding: 5px;
-}
-
-.pro-lnk {
-    height: 15%;
-    width: 100%;
-    background-color: darkorchid;
-    margin-top: 10px;
-}
-
-.pro-lnk p {
-    text-align: center;
-
-}
-
-.pro-btn {
-    height: 5dvh;
-    width: 8dvw;
-    font-size: large;
-    border: 3px solid gray;
-    border-radius: 10px;
-    transform: translate(100%);
-    margin-top: 15px;
-    margin-left: 25%;
-}
-
-
-
-#pro-img {
-    position: absolute;
-    height: 220px;
-    top: 30%;
-    left: 41%;
-}
 
 #contacts {
     position: relative;

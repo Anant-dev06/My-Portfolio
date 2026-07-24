@@ -101,22 +101,48 @@ gsap.from("#html", {
     }
 })
 
-const themeBtn = document.querySelector("#theme-btn");
 
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
+const toggle = document.querySelector("#theme-toggle");
+const icon = toggle.querySelector("i");
+
+// Load Saved Theme
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+
     document.body.classList.add("dark");
-    themeBtn.textContent = "☀️";
+    icon.className = "ri-sun-line";
+
 } else {
-    themeBtn.textContent = "🌙";
+
+    icon.className = "ri-moon-line";
+
 }
 
-themeBtn.addEventListener("click", () => {
+// Toggle Theme
+
+
+toggle.addEventListener("click", () => {
+    let hb = document.querySelector("#hero");
     document.body.classList.toggle("dark");
 
-    const isDark = document.body.classList.contains("dark");
+    toggle.classList.add("rotate");
 
-    themeBtn.textContent = isDark ? "☀️" : "🌙";
+    if (document.body.classList.contains("dark")) {
 
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+        icon.className = "ri-sun-line";
+        localStorage.setItem("theme", "dark");
+
+    } else {
+
+        icon.className = "ri-moon-line";
+        localStorage.setItem("theme", "light");
+
+    }
+
+    setTimeout(() => {
+        toggle.classList.remove("rotate");
+    }, 500);
+
 });
