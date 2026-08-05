@@ -307,21 +307,44 @@ body::-webkit-scrollbar {
     height: 80%;
     width: 95%;
     justify-self: center;
-    background-color: #bcb4b4;
     margin-top: 25px;
 }
 
 .sb {
-    height: 42%;
+    position: relative;
+    overflow: hidden;
+    height: 43%;
     width: 30%;
-    border: 3px solid rgb(92, 90, 92);
-    background-color: #252525;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
     align-items: center;
     justify-content: center;
     display: flex;
 
+    background: rgba(83, 81, 81, 0.351);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 24px;
+
+    transition: transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+}
+
+
+.sb:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(255, 255, 255, .15);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .45),
+        inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+
+.sb:hover::before {
+    left: 170%;
 }
 
 .sb-item {
@@ -346,6 +369,11 @@ body::-webkit-scrollbar {
     margin-top: 5px;
     font-size: large;
     color: darkgrey;
+}
+
+#project {
+    height: 100dvh;
+    width: screen;
 }
 
 #contacts {
