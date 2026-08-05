@@ -28,11 +28,12 @@ body::-webkit-scrollbar {
 
 
 #navbar {
-    height: 8dvh;
-    width: 20%;
+    height: 9dvh;
+    width: 6%;
     border-radius: 50px;
     overflow: hidden;
-    margin-top: 4px;
+    margin-top: 6px;
+    margin-left: 6px;
     transform: translate(1%);
     background-color: #1b1b19;
     color: white;
@@ -42,7 +43,7 @@ body::-webkit-scrollbar {
 
 #left-nav {
     height: 80%;
-    width: 30%;
+    width: 85%;
     background-image: url("logo-port.jpg");
     background-position: center;
     background-size: cover;
@@ -76,12 +77,12 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 1%;
     top: 18%;
-    background: rgba(255, 255, 255, .06);
+    /* background: rgba(255, 255, 255, .06);
     backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, .12);
     box-shadow:
         0 10px 40px rgba(0, 0, 0, .35),
-        inset 0 1px rgba(255, 255, 255, .08);
+        inset 0 1px rgba(255, 255, 255, .08); */
 
     border-radius: 20px;
 }
@@ -112,6 +113,7 @@ body::-webkit-scrollbar {
     font-size: 35px;
     font-weight: 700;
     color: aliceblue;
+    line-height: 55px;
 }
 
 #hr-btn:hover {
@@ -221,7 +223,9 @@ body::-webkit-scrollbar {
 #about-img {
     height: 90%;
     width: 30%;
-    background-color: coral;
+    background-image: url("about-img.png");
+    background-size: cover;
+    background-position: center;
 }
 
 #about-detail {
@@ -251,12 +255,12 @@ body::-webkit-scrollbar {
     width: 90%;
     justify-self: center;
     /* background-color: aqua; */
-    margin-top: 25px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
     padding: 10px;
 }
 
@@ -281,7 +285,68 @@ body::-webkit-scrollbar {
     color: #bcb4b4;
 }
 
+#skills {
+    height: 100dvh;
+    width: 100%;
+    border: 1px solid transparent;
+}
 
+#sk-head {
+    color: rgb(150, 149, 149);
+    text-align: center;
+    font-size: 7dvh;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 95%;
+    justify-self: center;
+    background-color: #bcb4b4;
+    margin-top: 25px;
+}
+
+.sb {
+    height: 42%;
+    width: 30%;
+    border: 3px solid rgb(92, 90, 92);
+    background-color: #252525;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.sb-item {
+    height: 95%;
+    width: 95%;
+    text-align: center;
+    padding: 20px;
+}
+
+.sb-item i {
+    display: block;
+    font-size: 75px;
+    margin-top: 8px;
+    color: green;
+}
+
+.sb-item h1 {
+    color: white;
+}
+
+.sb-item p {
+    margin-top: 5px;
+    font-size: large;
+    color: darkgrey;
+}
 
 #contacts {
     position: relative;
