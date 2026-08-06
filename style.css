@@ -523,6 +523,125 @@ body::-webkit-scrollbar {
     font-size: large;
 }
 
+#education {
+    height: 100dvh;
+    width: screen;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#education h1 {
+    color: #615f5f;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#edu-box {
+    height: 85%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.edu-card {
+    height: 30%;
+    width: 60%;
+    /* border: 3px solid darkgray;
+    background-color: #bcb4b489; */
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.eb-num {
+    height: 90%;
+    width: 20%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    align-items: center;
+    color: #9CA3AF;
+}
+
+.eb-num p {
+    font-size: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: -10px;
+}
+
+.eb-detail {
+    height: 94%;
+    width: 75%;
+    /* background-color: cyan; */
+    padding: 5px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ed-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    padding-bottom: 2px;
+    border-bottom: 2px solid gray;
+    color: #FFFFFF;
+}
+
+.ed-board {
+    font-size: 20px;
+    font-weight: 600;
+    color: #D1D5DB;
+}
+
+.ed-org {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.ed-loc {
+    font-size: 18px;
+    font-weight: 600;
+    color: #9CA3AF;
+}
+
+.ed-com {
+    font-size: 17px;
+    font-weight: 500;
+    color: #B0B0B0;
+}
+
+#eb-1 {
+    position: absolute;
+    left: 5%;
+    top: 2%;
+}
+
+#eb-2 {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+#eb-3 {
+    position: absolute;
+    left: 5%;
+    top: 68%;
+}
+
+
+
+/* contact part */
 #contacts {
     position: relative;
     height: 100dvh;
