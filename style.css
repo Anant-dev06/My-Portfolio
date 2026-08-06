@@ -336,6 +336,10 @@ body::-webkit-scrollbar {
 .sb:hover {
     transform: translateY(-10px);
 
+    background: rgba(96, 95, 95, 0.351);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+
     border-color: rgba(255, 255, 255, .15);
 
     box-shadow:
@@ -371,9 +375,152 @@ body::-webkit-scrollbar {
     color: darkgrey;
 }
 
+#si1 {
+    color: orange;
+}
+
+#si2 {
+    color: blue;
+}
+
+#si3 {
+    color: yellow;
+}
+
+#si4 {
+    color: aquamarine;
+}
+
+#si5 {
+    color: aqua;
+}
+
+#si6 {
+    color: darkmagenta;
+}
+
 #project {
+    position: relative;
     height: 100dvh;
     width: screen;
+    margin-top: 30px;
+}
+
+#pro-head {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 23dvh;
+    letter-spacing: -2px;
+    color: #615f5f;
+}
+
+#pro-box {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    height: 95%;
+    width: 80%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pc {
+    height: 40dvh;
+    width: 30%;
+    background-color: #17181C;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, .08);
+    border-radius: 10px;
+}
+
+.pro-img {
+    height: 65%;
+    width: 95%;
+    /* background-color: antiquewhite; */
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .12);
+    margin-top: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pro-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pro-img img:hover {
+    transform: scale(1.2);
+    transition: 0.8s ease;
+}
+
+.pro-detail {
+    height: 28%;
+    width: 97%;
+    /* background-color: rgba(86, 86, 86, 0.486);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(43, 41, 41, 0.429); */
+    border-radius: 10px;
+    color: #A1A1AA;
+}
+
+.pro-detail h1 {
+    font-size: x-large;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pro-btn {
+    height: 5dvh;
+    width: 10dvw;
+    margin-top: 9px;
+    margin-left: 28%;
+    font-size: x-large;
+    border: 3px solid gainsboro;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.pro-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pro-btn:hover {
+    background-color: #615f5f;
+    /* Ferrari Red */
+    color: white;
+}
+
+#mc {
+    height: 17dvh;
+    width: 35%;
+    background-color: #17181C;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, .08);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#mc p {
+    color: white;
+    font-size: large;
 }
 
 #contacts {
