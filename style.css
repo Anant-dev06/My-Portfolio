@@ -641,8 +641,15 @@ body::-webkit-scrollbar {
 }
 
 #certification {
-    height: 100dvh;
+    height: 120dvh;
     width: 100%;
+}
+
+#cert-head {
+    color: #615f5f;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
