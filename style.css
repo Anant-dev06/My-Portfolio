@@ -577,6 +577,7 @@ body::-webkit-scrollbar {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     letter-spacing: -10px;
+    margin-left: 5px;
 }
 
 .eb-detail {
@@ -637,6 +638,11 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 5%;
     top: 68%;
+}
+
+#certification {
+    height: 100dvh;
+    width: 100%;
 }
 
 
