@@ -527,6 +527,7 @@ body::-webkit-scrollbar {
     height: 100dvh;
     width: screen;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid transparent;
     display: flex;
     flex-wrap: wrap;
@@ -641,15 +642,68 @@ body::-webkit-scrollbar {
 }
 
 #certification {
-    height: 120dvh;
+    height: 100dvh;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 #cert-head {
     color: #615f5f;
     font-size: 70px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+#cert-box {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+
+.c-card {
+    position: relative;
+    height: 38dvh;
+    width: 30%;
+    border: 3px solid #9CA3AF;
+    border-radius: 10px;
+    /* background-color: rgb(158, 103, 20); */
+    overflow: hidden;
+}
+
+.c-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.c-over {
+    display: none;
+    /* position: absolute;
+    bottom: 0;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #37373877;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center; */
+
+}
+
+.c-over p {
+    align-self: center;
+    font-size: 5dvh;
+    font-weight: 700;
+    color: orange;
 }
 
 
