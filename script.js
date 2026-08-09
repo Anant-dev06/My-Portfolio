@@ -10,7 +10,20 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-const lenis = new Lenis({
-    prevent: (node) => node.id === "card-view",
-});
 
+
+// Loader screen
+const loader = document.querySelector(".loader");
+const video = document.querySelector(".loader-video");
+
+if (sessionStorage.getItem("loaderShown")) {
+    // Loader already shown in this browser session
+    loader.style.display = "none";
+} else {
+    // First visit in this session
+    sessionStorage.setItem("loaderShown", "true");
+
+    video.addEventListener("ended", () => {
+        loader.style.display = "none";
+    });
+}
