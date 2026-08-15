@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
     --text-color: #ffffff;
     --secondary-text: #aaaaaa;
     --head-text: #6a6666c8;
+    --name-text: #ffffff;
 }
 
 body.bright {
@@ -455,7 +456,7 @@ body.bright {
     justify-content: center;
     display: flex;
 
-    background: var(--bg-color);
+    background: var(--card-bg-color);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 
@@ -508,7 +509,7 @@ body.bright {
 .sb-item p {
     margin-top: 5px;
     font-size: large;
-    color: darkgrey;
+    color: var(--name-text);
 }
 
 #si1 {
@@ -537,127 +538,61 @@ body.bright {
 
 #project {
     position: relative;
-    height: 100dvh;
+    height: 200dvh;
     width: screen;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 #pro-head {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 23dvh;
+    /* writing-mode: vertical-rl;
+    text-orientation: mixed; */
+    font-size: 65px;
+    text-align: center;
     letter-spacing: -2px;
     color: var(--head-text);
+    margin-bottom: 10px;
 }
 
 #pro-box {
     position: absolute;
-    top: 2%;
-    right: 3%;
+    top: 6%;
+    /* right: 3%; */
     height: 95%;
-    width: 80%;
-    /* background-color: antiquewhite; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-.pc {
-    height: 40dvh;
-    width: 30%;
-    background-color: #17181C;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 2px solid rgba(255, 255, 255, .08);
-    border-radius: 10px;
-}
-
-.pro-img {
-    height: 65%;
-    width: 95%;
-    /* background-color: antiquewhite; */
-    background: rgba(255, 255, 255, .05);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, .12);
-    margin-top: 6px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.pro-img img {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.pro-img img:hover {
-    transform: scale(1.2);
-    transition: 0.8s ease;
-}
-
-.pro-detail {
-    height: 28%;
-    width: 97%;
-    /* background-color: rgba(86, 86, 86, 0.486);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(43, 41, 41, 0.429); */
-    border-radius: 10px;
-    color: #A1A1AA;
-}
-
-.pro-detail h1 {
-    font-size: x-large;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.pro-btn {
-    height: 5dvh;
-    width: 10dvw;
-    margin-top: 9px;
-    margin-left: 28%;
-    font-size: x-large;
-    border: 3px solid gainsboro;
-    background: rgba(255, 255, 255, .08);
-    border: 1px solid #FFFFFF;
-    color: #fff;
-    border-radius: 10px;
-}
-
-.pro-btn a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.pro-btn:hover {
-    background-color: #615f5f;
-    /* Ferrari Red */
-    color: white;
-}
-
-#mc {
-    height: 17dvh;
-    width: 35%;
-    background-color: #17181C;
-    backdrop-filter: blur(10px);
+    background-color: antiquewhite;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    border: 2px solid rgba(255, 255, 255, .08);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: -20px;
+    align-items: center;
+    gap: 10px;
 }
 
-#mc p {
-    color: white;
-    font-size: large;
+.pr-c {
+    height: 23%;
+    width: 95%;
+    background-color: #aaaaaa;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
 }
+
+.pr-img {
+    height: 100%;
+    width: 30%;
+    background-color: darkgreen;
+    z-index: 999;
+}
+
+.pr-detail {
+    transform: translate(-100%);
+    height: 100%;
+    width: 70%;
+    background-color: aqua;
+}
+
+
 
 #education {
     height: 100dvh;
