@@ -92,25 +92,6 @@ brightbtn.addEventListener("click", () => {
 });
 
 
-// // for project card animation
-// let pc = document.querySelectorAll(".pr-c");
-// let pi = document.querySelectorAll(".pr-img");
-// let pd = document.querySelectorAll(".pr-detail");
-// pc.addEventListener("mouseenter", () => {
-//     gsap.to(".pr-detail", {
-//         x: -0,
-//         duration: 0.8,
-//         opacity: 1
-//     })
-// })
-
-// pc.addEventListener("mouseleave", () => {
-//     gsap.to(".pr-detail", {
-//         x: -1000,
-//         duration: 0.8,
-//         opacity: 0
-//     })
-// })
 
 // Project card animation
 

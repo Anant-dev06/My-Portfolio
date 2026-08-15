@@ -538,7 +538,7 @@ body.bright {
 
 #project {
     position: relative;
-    height: 200dvh;
+    height: 240dvh;
     width: screen;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -560,29 +560,47 @@ body.bright {
     /* right: 3%; */
     height: 95%;
     width: 100%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .pr-c {
-    height: 23%;
+    height: 20%;
     width: 95%;
     background-color: #aaaaaa;
+    border: 3px double grey;
     display: flex;
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
+}
+
+.pr-c h1 {
+    font-size: 30dvh;
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    color: #555555;
+    font-family: fantasy;
 }
 
 .pr-img {
     height: 100%;
     width: 30%;
     background-color: darkgreen;
-    z-index: 999;
+    z-index: 1099;
+}
+
+.pr-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .pr-detail {
@@ -590,6 +608,26 @@ body.bright {
     height: 100%;
     width: 70%;
     background-color: aqua;
+    z-index: 700;
+}
+
+.mc {
+    height: 18dvh;
+    width: 30%;
+    background-color: rgba(75, 76, 73, 0.499);
+    border: 4px solid rgb(149, 149, 153);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px black;
+}
+
+.mc p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: #bcb4b4;
 }
 
 
