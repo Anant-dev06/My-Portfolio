@@ -580,7 +580,7 @@ body.bright {
     position: relative;
 }
 
-.pr-c h1 {
+.prc-num {
     font-size: 30dvh;
     position: absolute;
     right: 20%;
@@ -607,8 +607,41 @@ body.bright {
     transform: translate(-100%);
     height: 100%;
     width: 70%;
-    background-color: aqua;
+    background-color: #1c1c25;
     z-index: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.pr-name {
+    color: #aaaaaa;
+    font-size: 40px;
+    text-align: center;
+}
+
+.pr-tool {
+    color: #555555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pr-p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    color: antiquewhite;
+}
+
+.pr-btn {
+    height: 6dvh;
+    width: 15dvw;
+    border: 3px double darkslategray;
+    border-radius: 10px;
+    margin-top: 5dvh;
+    background-color: transparent;
+    font-size: x-large;
+    font-weight: 700;
+    color: darkkhaki;
 }
 
 .mc {
