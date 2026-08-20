@@ -29,6 +29,20 @@ if (sessionStorage.getItem("loaderShown")) {
 }
 
 
+
+// For cursor effect
+let main = document.querySelector("#main");
+let cursor = document.querySelector("#cursor");
+main.addEventListener("mousemove", (dets) => {
+    gsap.to(cursor, {
+        x: dets.x,
+        y: dets.y,
+        duration: 0.5,
+        ease: "back.out"
+    })
+})
+
+
 // For menu effect
 let menubtn = document.querySelector("#menubtn");
 let menubox = document.querySelector("#menu-box");
