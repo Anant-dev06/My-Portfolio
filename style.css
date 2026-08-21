@@ -19,22 +19,73 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
+
 :root {
+    /* DARK THEME */
     --bg-color: #1c1c25;
-    --text-color: #ffffff;
-    --secondary-text: #aaaaaa;
-    --head-text: #6a6666c8;
-    --name-text: #ffffff;
+
+    /* Main text */
+    --text-color: #f5f7fa;
+
+    /* Paragraph / secondary text */
+    --secondary-text: #a7adb8;
+
+    /* All headings */
+    --head-text: #ffffff;
+
+    /* Your name / highlighted text */
+    --name-text: #e5e9ed;
+
+    /* Cards / sections */
+    --card-bg-color: #252532;
+    --card-border: #363647;
+    --card-text: #f5f5f7;
+    --card-description: #a9a9b5;
+
+
+    /* Borders */
+    --border-color: #3a3a47;
+
+    /* Buttons / links / accents */
+    --button-color: #3b82f6;
+
+    /* Button text */
+    --button-text: #ffffff;
 }
 
 body.bright {
+    /* BRIGHT THEME */
     --bg-color: #ffffff;
+
+    /* Main text */
     --text-color: #1c1c25;
-    --secondary-text: #555555;
-    --name-text: #46382b;
-    --head-text: #2c10109e;
-    --card-bg-color: #12121349;
+
+    /* Paragraph / secondary text */
+    --secondary-text: #5f6672;
+
+    /* All headings */
+    --head-text: #111827;
+
+    /* Your name / highlighted text */
+    --name-text: #2563eb;
+
+    /* Cards / sections */
+    --card-bg-color: #f4f5f7;
+    --card-border: #e1e3e8;
+    --card-text: #171923;
+    --card-description: #5f6470;
+
+    /* Borders */
+    --border-color: #d1d5db;
+
+    /* Buttons / links / accents */
+    --button-color: #2563eb;
+
+    /* Button text */
+    --button-text: #ffffff;
 }
+
 
 .bright {
     background-color: #9CA3AF;
@@ -80,22 +131,23 @@ body.bright {
 }
 
 
-#cursor {
-    height: 30px;
-    width: 30px;
-    background-color: var(--bg-color);
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    position: fixed;
-    z-index: 9999;
-}
-
 #main {
     width: 100dvw;
 }
 
 
+#hero {
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    /* background-color: #0F0F12; */
+    border: 1px solid transparent;
+}
+
 #navbar {
+    position: absolute;
+    top: 0;
+    left: 1%;
     height: 6dvh;
     width: 12%;
     border-radius: 10px;
@@ -108,24 +160,16 @@ body.bright {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: default;
 }
 
 #navbar p {
     font-size: x-large;
 }
 
-
-#hero {
-    position: relative;
-    height: 92dvh;
-    width: 100%;
-    /* background-color: #0F0F12; */
-    border: 1px solid transparent;
-}
-
 #menu-container {
     position: absolute;
-    top: -5%;
+    top: 0%;
     right: 0%;
     height: 9dvh;
     width: 22dvw;
@@ -160,14 +204,14 @@ body.bright {
 #menu-box {
     display: none;
     position: absolute;
-    top: 5%;
+    top: 9%;
     right: 0%;
     height: 55dvh;
     width: 23%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: var(--head-text);
-    color: var(--text-color);
+    background-color: var(--card-bg-color);
+    color: var(--card-text);
     backdrop-filter: blur(10px);
 }
 
@@ -222,19 +266,8 @@ body.bright {
     position: absolute;
     left: 1%;
     top: 18%;
-    background-color: var(--card-bg-color);
-    backdrop-filter: blur(10px);
-
+    background-color: transparent;
     border-radius: 20px;
-}
-
-#left-hero:hover {
-    background: rgba(255, 255, 255, .09);
-
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, .5);
 }
 
 
@@ -277,8 +310,10 @@ body.bright {
     border-radius: 20px;
     position: absolute;
     right: -1%;
-    top: 18%;
+    top: 25%;
     padding: 20px;
+    padding-left: 28px;
+    transform: translate(90%);
 }
 
 /* #right-hero:hover {
@@ -308,7 +343,7 @@ body.bright {
 
 #rg-btn:hover {
     rotate: 180deg;
-    border: 5px solid greenyellow;
+    border: 5px solid var(--button-color);
     transition: 0.8s ease;
 }
 
@@ -412,7 +447,7 @@ body.bright {
     width: 17dvw;
     border: 4px solid black;
     border-radius: 10px;
-    background-color: var(--bg-color);
+    background-color: var(--card-bg-color);
     backdrop-filter: blur(10px);
 }
 
@@ -425,7 +460,7 @@ body.bright {
 .num-data {
     text-align: center;
     font-size: 20px;
-    color: #bcb4b4;
+    color: var(--text-color);
 }
 
 #skills {
@@ -515,7 +550,7 @@ body.bright {
 .sb-item p {
     margin-top: 5px;
     font-size: large;
-    color: var(--name-text);
+    color: var(--text-color);
 }
 
 #si1 {
@@ -578,7 +613,7 @@ body.bright {
 .pr-c {
     height: 20%;
     width: 95%;
-    background-color: #aaaaaa;
+    background-color: var(--card-bg-color);
     border: 3px double grey;
     display: flex;
     overflow: hidden;
@@ -591,7 +626,7 @@ body.bright {
     position: absolute;
     right: 20%;
     top: 5%;
-    color: #555555;
+    color: var(--secondary-text);
     font-family: fantasy;
 }
 
@@ -626,7 +661,7 @@ body.bright {
 }
 
 .pr-tool {
-    color: #555555;
+    color: #908e8e;
     text-align: center;
     margin-top: 10px;
 }
@@ -672,7 +707,7 @@ body.bright {
 .mc {
     height: 18dvh;
     width: 30%;
-    background-color: rgba(75, 76, 73, 0.499);
+    background-color: var(--card-bg-color);
     border: 4px solid rgb(149, 149, 153);
     border-radius: 10px;
     padding: 10px;
@@ -685,7 +720,7 @@ body.bright {
     font-size: 20px;
     text-align: center;
     font-weight: 500;
-    color: #bcb4b4;
+    color: var(--text-color);
 }
 
 
@@ -721,7 +756,7 @@ body.bright {
     width: 60%;
     /* border: 3px solid darkgray;
     background-color: #bcb4b489; */
-    background: #181818;
+    background: var(--card-bg-color);
     border: 1px solid rgba(255, 255, 255, .12);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -737,7 +772,7 @@ body.bright {
     /* background-color: cornflowerblue; */
     display: flex;
     align-items: center;
-    color: #9CA3AF;
+    color: var(--text-color);
 }
 
 .eb-num p {
@@ -763,31 +798,31 @@ body.bright {
     font-weight: 700;
     padding-bottom: 2px;
     border-bottom: 2px solid gray;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .ed-board {
     font-size: 20px;
     font-weight: 600;
-    color: #D1D5DB;
+    color: var(--text-color);
 }
 
 .ed-org {
     font-size: 18px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .ed-loc {
     font-size: 18px;
     font-weight: 600;
-    color: #9CA3AF;
+    color: var(--text-color);
 }
 
 .ed-com {
     font-size: 17px;
     font-weight: 500;
-    color: #B0B0B0;
+    color: var(--text-color);
 }
 
 #eb-1 {
@@ -818,10 +853,10 @@ body.bright {
 }
 
 #cert-head {
-    color: #615f5f;
+    color: var(--head-text);
     font-size: 70px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 5dvh;
 }
 
 #cert-box {
@@ -881,7 +916,7 @@ body.bright {
     height: 100dvh;
     width: screen;
     /* background-color: rgb(195, 193, 193); */
-    background-color: var(--bg-color);
+    background-color: transparent;
 }
 
 #see-off {

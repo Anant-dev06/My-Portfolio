@@ -87,6 +87,23 @@ menucl.addEventListener("click", closeMenu);
 
 
 
+
+// For right hero box
+let box = document.querySelector("#right-hero");
+box.addEventListener("mouseover", () => {
+    gsap.to(box, {
+        x: 0,
+        duration: 0.8
+    })
+});
+box.addEventListener("mouseleave", () => {
+    gsap.to(box, {
+        x: 390,
+        duration: 0.8
+    })
+})
+
+
 // For Dark and bright toggle btn
 let darkbtn = document.querySelector("#ic-dark");
 let brightbtn = document.querySelector("#ic-bright");
