@@ -409,7 +409,24 @@ body.bright {
 #about-detail {
     height: 90%;
     width: 63%;
-    padding: 20px;
+    padding: 10px;
+}
+
+#unidiv {
+    height: 5dvh;
+    width: 90%;
+    background-color: rgba(255, 127, 80, 0.266);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(226, 159, 60, 0.63);
+    border-radius: 50px;
+    text-align: center;
+    line-height: 8px;
+}
+
+#uni-p {
+    font-size: large;
+    text-align: center;
+    color: var(--text-color);
 }
 
 #about h1 {
@@ -417,34 +434,43 @@ body.bright {
     font-size: 7dvh;
     color: var(--head-text);
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     outline: #1b1b19;
     margin-bottom: 10px;
 }
 
 #about p {
-    color: var(--text-color);
+    /* color: var(--text-color); */
     font-size: x-large;
     padding-top: 15px;
 }
 
+#ab-p {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+#p-goal {
+    padding-right: 45px;
+    color: var(--card-description);
+}
+
 #boxes {
     height: 60%;
-    width: 90%;
+    width: 95%;
     justify-self: center;
     /* background-color: aqua; */
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 40px;
+    gap: 20px;
     padding: 10px;
 }
 
 .box {
-    height: 20dvh;
-    width: 17dvw;
+    height: 18dvh;
+    width: 30dvw;
     border: 4px solid black;
     border-radius: 10px;
     background-color: var(--card-bg-color);
@@ -452,14 +478,14 @@ body.bright {
 }
 
 .box-num {
-    text-align: center;
-    font-size: 30px;
+    padding-left: 5px;
+    font-size: 25px;
     color: var(--text-color);
 }
 
 .num-data {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--text-color);
 }
 
