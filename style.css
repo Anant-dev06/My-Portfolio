@@ -22,67 +22,32 @@ body::-webkit-scrollbar {
 
 
 :root {
-    /* DARK THEME */
     --bg-color: #1c1c25;
-
-    /* Main text */
     --text-color: #f5f7fa;
-
-    /* Paragraph / secondary text */
     --secondary-text: #a7adb8;
-
-    /* All headings */
     --head-text: #ffffff;
-
-    /* Your name / highlighted text */
     --name-text: #e5e9ed;
-
-    /* Cards / sections */
     --card-bg-color: #252532;
     --card-border: #363647;
     --card-text: #f5f5f7;
     --card-description: #a9a9b5;
-
-
-    /* Borders */
     --border-color: #3a3a47;
-
-    /* Buttons / links / accents */
     --button-color: #3b82f6;
-
-    /* Button text */
     --button-text: #ffffff;
 }
 
 body.bright {
-    /* BRIGHT THEME */
     --bg-color: #ffffff;
-
-    /* Main text */
     --text-color: #1c1c25;
-
-    /* Paragraph / secondary text */
     --secondary-text: #5f6672;
-
-    /* All headings */
     --head-text: #111827;
-
-    /* Your name / highlighted text */
     --name-text: #2563eb;
-
-    /* Cards / sections */
     --card-bg-color: #f4f5f7;
     --card-border: #e1e3e8;
     --card-text: #171923;
     --card-description: #5f6470;
-
-    /* Borders */
     --border-color: #d1d5db;
-
-    /* Buttons / links / accents */
     --button-color: #2563eb;
-
-    /* Button text */
     --button-text: #ffffff;
 }
 

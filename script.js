@@ -47,7 +47,7 @@ main.addEventListener("mousemove", (dets) => {
 let menubtn = document.querySelector("#menubtn");
 let menubox = document.querySelector("#menu-box");
 let menucl = document.querySelector("#menu-cl");
-
+let menugo = document.querySelector("#menugo");
 function openMenu() {
     menubox.style.display = "block";
 
@@ -84,6 +84,13 @@ function closeMenu() {
 menubtn.addEventListener("click", openMenu);
 
 menucl.addEventListener("click", closeMenu);
+
+// Close menu when a menu item is clicked
+let menuItems = document.querySelectorAll("#menugo");
+
+menuItems.forEach((item) => {
+    item.addEventListener("click", closeMenu);
+});
 
 
 
