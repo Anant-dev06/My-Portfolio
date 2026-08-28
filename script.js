@@ -44,6 +44,7 @@ main.addEventListener("mousemove", (dets) => {
 
 
 // For menu effect
+
 let menubtn = document.querySelector("#menubtn");
 let menubox = document.querySelector("#menu-box");
 let menucl = document.querySelector("#menu-cl");
