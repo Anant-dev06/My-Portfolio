@@ -372,7 +372,7 @@ body.bright {
 
     #menu-container {
         position: absolute;
-        top: 1%;
+        top: 2%;
         right: 0%;
         height: 5dvh;
         width: 50dvw;
@@ -407,24 +407,25 @@ body.bright {
     #menu-box {
         display: none;
         position: absolute;
-        top: 9%;
+        top: 7%;
         right: 0%;
-        height: 55dvh;
-        width: 23%;
+        height: 30dvh;
+        width: 50%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         background-color: var(--card-bg-color);
         color: var(--card-text);
         backdrop-filter: blur(10px);
+        z-index: 4;
     }
 
     #menu-item {
-        font-size: xx-large;
+        font-size: medium;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        padding: 20px;
+        gap: 10px;
+        padding: 10px;
     }
 
     #menu-item a {
@@ -449,16 +450,16 @@ body.bright {
     #my-img {
         position: absolute;
         top: 25%;
-        transform: translate(30%);
+        transform: translate(28%);
         height: 60dvh;
         background-color: transparent;
         width: auto;
-        z-index: 2;
+        /* z-index: 2; */
     }
 
     #left-hero {
         position: absolute;
-        top: 5%;
+        top: 7%;
         height: 20dvh;
         /* width: 34dvw; */
         width: 520px;
