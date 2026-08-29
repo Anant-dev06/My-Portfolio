@@ -42,7 +42,7 @@ body.bright {
     --secondary-text: #5f6672;
     --head-text: #111827;
     --name-text: #2563eb;
-    --card-bg-color: #f4f5f7;
+    --card-bg-color: #d5d6d8;
     --card-border: #e1e3e8;
     --card-text: #171923;
     --card-description: #5f6470;
@@ -146,7 +146,7 @@ body.bright {
 }
 
 .menu-icon {
-    height: 90%;
+    height: 85%;
     width: 20%;
     background-color: #48484a55;
     box-shadow:
@@ -279,6 +279,7 @@ body.bright {
     padding: 20px;
     padding-left: 28px;
     transform: translate(90%);
+    text-align: center;
 }
 
 /* #right-hero:hover {
@@ -296,18 +297,17 @@ body.bright {
 }
 
 #rg-btn {
-    height: 7dvh;
-    width: 4dvw;
+    height: 5dvh;
+    width: 12dvw;
     margin-top: 15px;
     border: 5px solid rgb(56, 51, 51);
     border-radius: 50px;
-    font-size: xx-large;
-    position: absolute;
-    right: 48%;
+    font-size: large;
+    transform: translateX(10%);
+
 }
 
 #rg-btn:hover {
-    rotate: 180deg;
     border: 5px solid var(--button-color);
     transition: 0.8s ease;
 }
@@ -495,45 +495,11 @@ body.bright {
 
     #right-hero {
         display: none;
-        position: relative;
-        height: 31dvh;
-        /* width: 33dvw; */
-        width: 300px;
-        background: var(--card-bg-color);
-        color: var(--text-color);
-        backdrop-filter: blur(18px);
-        border: 1px solid rgba(255, 255, 255, .12);
-        box-shadow:
-            0 10px 40px rgba(0, 0, 0, .35),
-            inset 0 1px rgba(255, 255, 255, .08);
-
-        border-radius: 20px;
-        position: absolute;
-        padding: 20px;
-        padding-left: 28px;
-        transform: translate(90%);
     }
 
     #hr-ab {
         color: var(--text-color);
         font-size: medium;
-    }
-
-    #rg-btn {
-        height: 7dvh;
-        width: 15dvw;
-        margin-top: 15px;
-        border: 5px solid rgb(56, 51, 51);
-        border-radius: 50px;
-        font-size: xx-large;
-        position: absolute;
-        right: 48%;
-    }
-
-    #rg-btn:hover {
-        rotate: 180deg;
-        border: 5px solid var(--button-color);
-        transition: 0.8s ease;
     }
 
     #name {
@@ -865,13 +831,13 @@ body.bright {
     height: 95%;
     width: 95%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .sb-item i {
     display: block;
     font-size: 75px;
-    margin-top: 8px;
+    margin-top: 3px;
     color: green;
 }
 
@@ -988,7 +954,7 @@ body.bright {
     .sb-item i {
         display: block;
         font-size: 50px;
-        margin-top: 2px;
+        margin-top: 3px;
         color: green;
     }
 
@@ -999,7 +965,7 @@ body.bright {
 
     .sb-item p {
         margin-top: 3px;
-        font-size: medium;
+        font-size: small;
         color: var(--text-color);
     }
 
@@ -1121,17 +1087,17 @@ body.bright {
 .pr-p {
     text-align: center;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
     color: antiquewhite;
 }
 
 .btn-box {
-    height: 20dvh;
+    height: 15dvh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .pr-btn {

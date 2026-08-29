@@ -96,19 +96,22 @@ menuItems.forEach((item) => {
 
 
 // For right hero box
-let box = document.querySelector("#right-hero");
-box.addEventListener("mouseover", () => {
-    gsap.to(box, {
-        x: 0,
-        duration: 0.8
+if (window.innerWidth >= 1024) {
+    let box = document.querySelector("#right-hero");
+    box.addEventListener("mouseover", () => {
+        gsap.to(box, {
+            x: 0,
+            duration: 0.8
+        })
+    });
+    box.addEventListener("mouseleave", () => {
+        gsap.to(box, {
+            x: 390,
+            duration: 0.8
+        })
     })
-});
-box.addEventListener("mouseleave", () => {
-    gsap.to(box, {
-        x: 390,
-        duration: 0.8
-    })
-})
+}
+
 
 
 // For Dark and bright toggle btn
