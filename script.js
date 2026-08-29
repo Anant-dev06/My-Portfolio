@@ -136,28 +136,30 @@ brightbtn.addEventListener("click", () => {
 
 // Project card animation
 
-let pc = document.querySelectorAll(".pr-c");
+if (window.innerWidth >= 1024) {
+    let pc = document.querySelectorAll(".pr-c");
 
-pc.forEach((card) => {
+    pc.forEach((card) => {
 
-    let detail = card.querySelector(".pr-detail");
+        let detail = card.querySelector(".pr-detail");
 
-    card.addEventListener("mouseenter", () => {
-        gsap.to(detail, {
-            x: 0,
-            duration: 0.8,
-            opacity: 1
+        card.addEventListener("mouseenter", () => {
+            gsap.to(detail, {
+                x: 0,
+                duration: 0.8,
+                opacity: 1
+            });
         });
-    });
 
-    card.addEventListener("mouseleave", () => {
-        gsap.to(detail, {
-            x: -1000,
-            duration: 0.8,
-            opacity: 0
+        card.addEventListener("mouseleave", () => {
+            gsap.to(detail, {
+                x: -1000,
+                duration: 0.8,
+                opacity: 0
+            });
         });
-    });
 
-});
+    });
+}
 
 
