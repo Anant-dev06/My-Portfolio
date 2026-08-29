@@ -274,7 +274,7 @@ body.bright {
 
     border-radius: 20px;
     position: absolute;
-    right: -1%;
+    right: -1.5%;
     top: 25%;
     padding: 20px;
     padding-left: 28px;
@@ -579,7 +579,7 @@ body.bright {
 #about-img {
     height: 90%;
     width: 30%;
-    background-image: url("about-img.png");
+    background-image: url("about-my-img.png");
     background-size: cover;
     background-position: center;
 }
@@ -592,7 +592,7 @@ body.bright {
 
 #unidiv {
     height: 5dvh;
-    width: 90%;
+    width: 100%;
     background-color: rgba(255, 127, 80, 0.266);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(226, 159, 60, 0.63);
