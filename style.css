@@ -216,7 +216,7 @@ body.bright {
 #my-img {
     position: absolute;
     bottom: 0;
-    right: 28%;
+    right: 25%;
     height: 108dvh;
     background-color: transparent;
     width: auto;
@@ -351,7 +351,7 @@ body.bright {
         position: absolute;
         top: 0;
         left: 1%;
-        height: 6dvh;
+        height: 6vh;
         width: 30%;
         border-radius: 10px;
         overflow: hidden;
@@ -636,7 +636,7 @@ body.bright {
 
 @media (max-width: 600px) {
     #about {
-        height: 100dvh;
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -878,7 +878,7 @@ body.bright {
 
 @media (max-width:600px) {
     #skills {
-        height: 170dvh;
+        height: 170vh;
         width: 100%;
         border: 1px solid transparent;
     }
@@ -1144,7 +1144,7 @@ body.bright {
 @media (max-width: 600px) {
     #project {
         position: relative;
-        height: 340dvh;
+        height: 340vh;
         width: screen;
         margin-top: 10px;
         margin-bottom: 5px;
@@ -1419,7 +1419,7 @@ body.bright {
 
 @media (max-width:600px) {
     #education {
-        height: 80dvh;
+        height: 80vh;
         width: screen;
         margin-top: 1px;
         margin-bottom: 20px;
@@ -1604,7 +1604,7 @@ body.bright {
 
 @media (max-width:600px) {
     #certification {
-        height: 140dvh;
+        height: 140vh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -1664,14 +1664,14 @@ body.bright {
     background-color: transparent;
 }
 
-#see-off {
+/* #see-off {
     position: absolute;
     bottom: 12.5%;
     left: 5%;
     height: 70dvh;
     width: auto;
     overflow: hidden;
-}
+} */
 
 #meet {
     position: absolute;
@@ -1832,4 +1832,245 @@ body.bright {
     background-color: rgba(238, 231, 231, 0.582);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+}
+
+#meet-m {
+    display: none;
+}
+
+#frm-head {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    /* #contacts {
+        position: relative;
+        min-height: 100vh;
+        height: auto;
+        padding: 30px 15px;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: transparent;
+    } */
+
+    #contacts {
+        position: relative;
+        min-height: 100svh;
+        height: auto;
+        width: 100%;
+        padding: 30px 15px;
+        box-sizing: border-box;
+    }
+
+    /* #see-off {
+        position: absolute;
+        bottom: 12.5%;
+        left: 5%;
+        height: 70dvh;
+        width: auto;
+        overflow: hidden;
+    } */
+
+    #meet {
+        display: none;
+        position: absolute;
+        right: 10%;
+        top: 62%;
+        height: 25vh;
+        width: 80dvw;
+        background-color: rgba(247, 249, 250, 0.432);
+        backdrop-filter: blur(10px);
+        border: 3px solid gray;
+        border-radius: 10px;
+    }
+
+    #meet-m {
+        display: block;
+        position: absolute;
+        top: 72%;
+        height: 25vh;
+        width: 80dvw;
+        background-color: rgba(247, 249, 250, 0.432);
+        backdrop-filter: blur(10px);
+        border: 3px solid gray;
+        border-radius: 10px;
+    }
+
+    #meet-m i {
+        display: block;
+        font-size: medium;
+        font-weight: 500;
+        padding: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #cont {
+        font-size: large;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 30;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    #frm-head {
+        display: block;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    #meet i {
+        display: block;
+        font-size: medium;
+        font-weight: 500;
+        padding: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .a-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    #frm {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        height: fit-content;
+        padding: 20px;
+        width: 90%;
+        background-color: rgba(46, 45, 43, 0.453);
+        backdrop-filter: blur(20px);
+        border: 3px solid rgb(59, 58, 53);
+        border-radius: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #frm h1 {
+        font-weight: 100;
+        padding: 8px;
+        margin-left: 17px;
+        font-weight: 300;
+    }
+
+    .bx {
+        height: 35px;
+        width: 45vw;
+        margin-left: 22px;
+        display: inline;
+        text-align: center;
+        font-size: medium;
+        font-family: cursive;
+        font-weight: 400;
+        padding: 3px;
+        margin-bottom: 4px;
+    }
+
+    .bx:active {
+        outline: 2px solid cadetblue;
+    }
+
+    #slct {
+        height: 5vh;
+        width: 8dvw;
+        margin-left: 20px;
+        font-size: medium;
+        font-family: cursive;
+        font-weight: 400;
+        padding: 3px;
+        margin-bottom: 4px;
+    }
+
+    .tx {
+        height: 80px;
+        width: 50vw;
+        margin-left: 22px;
+        font-size: medium;
+        font-family: cursive;
+        font-weight: 500;
+        padding: 3px;
+        text-align: center;
+    }
+
+    #tks {
+        display: none;
+        position: absolute;
+        bottom: 1%;
+        height: 6vh;
+        width: 100%;
+        background-color: darkslategray;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    #subbtn {
+        margin-top: 12px;
+        margin-left: 15px;
+        height: 5vh;
+        width: 20dvw;
+        border: 3px solid black;
+        border-radius: 50px;
+        font-size: x-large;
+    }
+
+
+    #ll {
+        display: flex;
+        text-align: center;
+        font-size: medium;
+        font-family: fantasy;
+        letter-spacing: 5px;
+        font-weight: 300;
+        padding: 10px;
+    }
+
+    #cnt {
+        display: none;
+        position: absolute;
+        top: 14%;
+        left: 5%;
+        height: 50dvh;
+        width: 20%;
+        background-color: #6a6866;
+        border-radius: 10px;
+        rotate: 18deg;
+    }
+
+    #cnt2 {
+        display: none;
+        position: absolute;
+        top: 14%;
+        left: 5%;
+        height: 50dvh;
+        width: 20%;
+        padding: 5px;
+        background-color: #bcb4b4;
+        background-image: url("my-ppf.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        rotate: 0deg;
+    }
+
+    /* #data {
+        position: absolute;
+        right: 1%;
+        top: 2%;
+        height: 85vh;
+        width: 98dvw;
+        background-color: rgba(238, 231, 231, 0.582);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    } */
+
+    #data {
+        position: absolute;
+        right: 1%;
+        top: 2%;
+        height: auto;
+        min-height: 95vh;
+        width: 98%;
+        box-sizing: border-box;
+    }
 }
