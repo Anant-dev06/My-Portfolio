@@ -1884,28 +1884,50 @@ body.bright {
         border-radius: 10px;
     }
 
-    #meet-m {
+    /* #meet-m {
         display: block;
         position: absolute;
-        top: 72%;
-        height: 25vh;
+        bottom: 2dvh;
+        height: 25dvh;
         width: 80dvw;
         background-color: rgba(247, 249, 250, 0.432);
         backdrop-filter: blur(10px);
         border: 3px solid gray;
         border-radius: 10px;
+    } */
+
+    #meet-m {
+        display: block;
+        position: relative;
+
+        top: auto;
+        left: auto;
+        right: auto;
+
+        width: 90%;
+        height: auto;
+        min-height: 140px;
+
+        margin: 20px auto 30px;
+
+        background-color: rgba(247, 249, 250, 0.432);
+        backdrop-filter: blur(10px);
+        border: 3px solid gray;
+        border-radius: 10px;
+
+        box-sizing: border-box;
     }
 
     #meet-m i {
         display: block;
-        font-size: medium;
+        font-size: large;
         font-weight: 500;
         padding: 5px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     #cont {
-        font-size: large;
+        font-size: x-large;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 30;
@@ -1914,6 +1936,7 @@ body.bright {
     }
 
     #frm-head {
+        color: var(--text-color);
         display: block;
         text-align: center;
         font-size: xx-large;
@@ -1932,7 +1955,7 @@ body.bright {
         color: black;
     }
 
-    #frm {
+    /* #frm {
         position: absolute;
         top: 10%;
         left: 4%;
@@ -1944,6 +1967,29 @@ body.bright {
         border: 3px solid rgb(59, 58, 53);
         border-radius: 10px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    } */
+
+    #frm {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 92%;
+        height: fit-content;
+
+        margin: 20px;
+        margin-bottom: 10px;
+
+        padding: 20px;
+        box-sizing: border-box;
+
+        background-color: rgba(46, 45, 43, 0.453);
+        backdrop-filter: blur(20px);
+        border: 3px solid rgb(59, 58, 53);
+        border-radius: 10px;
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     #frm h1 {
@@ -2011,7 +2057,11 @@ body.bright {
         width: 20dvw;
         border: 3px solid black;
         border-radius: 50px;
-        font-size: x-large;
+        font-size: large;
+    }
+
+    label h1 {
+        color: white;
     }
 
 
@@ -2064,13 +2114,26 @@ body.bright {
         border-radius: 10px;
     } */
 
-    #data {
+    /* #data {
         position: absolute;
         right: 1%;
         top: 2%;
         height: auto;
-        min-height: 95vh;
+        min-height: 65vh;
         width: 98%;
         box-sizing: border-box;
+    } */
+
+    #data {
+        position: relative;
+
+        width: 95dvw;
+        height: auto;
+        min-height: 0;
+
+        margin: 0 auto;
+
+        box-sizing: border-box;
+        background-color: transparent;
     }
 }
