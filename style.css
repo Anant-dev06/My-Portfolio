@@ -15,6 +15,22 @@ body {
     background-color: #0F0F12;
 }
 
+@media (max-width: 600px) {
+
+    html {
+        overflow-anchor: none;
+    }
+
+    body {
+        overflow-anchor: none;
+    }
+
+    #frm {
+        scroll-margin-top: 0;
+        scroll-margin-bottom: 20px;
+    }
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -93,6 +109,30 @@ body.bright {
 
     object-fit: cover;
     display: block;
+}
+
+@media (max-width:600px) {
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+
+        background: #000;
+
+        z-index: 99999;
+        overflow: hidden;
+    }
+
+    .loader-video {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        display: block;
+    }
 }
 
 
@@ -1142,10 +1182,18 @@ body.bright {
 }
 
 @media (max-width: 600px) {
+    /* #project {
+        position: relative;
+        height: 340svh;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    } */
+
     #project {
         position: relative;
-        height: 340vh;
-        width: screen;
+        width: 100%;
+        height: auto;
         margin-top: 10px;
         margin-bottom: 5px;
     }
@@ -1159,23 +1207,33 @@ body.bright {
         color: var(--head-text);
     }
 
+    /* 
     #pro-box {
         position: absolute;
         top: 2%;
-        /* right: 3%; */
         height: 95%;
         width: 100%;
-        /* background-color: antiquewhite; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
+        gap: 30px;
+    } */
+
+    #pro-box {
+        position: relative;
+        top: auto;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
 
     .pr-c {
-        height: 70dvh;
+        height: 70svh;
         width: 98%;
         background-color: var(--card-bg-color);
         border: 3px double grey;
@@ -1419,8 +1477,9 @@ body.bright {
 
 @media (max-width:600px) {
     #education {
-        height: 80vh;
-        width: screen;
+        height: auto;
+        min-height: 80svh;
+        width: 100%;
         margin-top: 1px;
         margin-bottom: 20px;
         border: 1px solid transparent;
@@ -1604,7 +1663,8 @@ body.bright {
 
 @media (max-width:600px) {
     #certification {
-        height: 140vh;
+        height: auto;
+        min-height: 140svh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -1843,15 +1903,6 @@ body.bright {
 }
 
 @media (max-width: 600px) {
-    /* #contacts {
-        position: relative;
-        min-height: 100vh;
-        height: auto;
-        padding: 30px 15px;
-        box-sizing: border-box;
-        width: 100%;
-        background-color: transparent;
-    } */
 
     #contacts {
         position: relative;
@@ -1861,15 +1912,6 @@ body.bright {
         padding: 30px 15px;
         box-sizing: border-box;
     }
-
-    /* #see-off {
-        position: absolute;
-        bottom: 12.5%;
-        left: 5%;
-        height: 70dvh;
-        width: auto;
-        overflow: hidden;
-    } */
 
     #meet {
         display: none;
@@ -1883,18 +1925,6 @@ body.bright {
         border: 3px solid gray;
         border-radius: 10px;
     }
-
-    /* #meet-m {
-        display: block;
-        position: absolute;
-        bottom: 2dvh;
-        height: 25dvh;
-        width: 80dvw;
-        background-color: rgba(247, 249, 250, 0.432);
-        backdrop-filter: blur(10px);
-        border: 3px solid gray;
-        border-radius: 10px;
-    } */
 
     #meet-m {
         display: block;
@@ -1956,20 +1986,6 @@ body.bright {
     }
 
     /* #frm {
-        position: absolute;
-        top: 10%;
-        left: 4%;
-        height: fit-content;
-        padding: 20px;
-        width: 90%;
-        background-color: rgba(46, 45, 43, 0.453);
-        backdrop-filter: blur(20px);
-        border: 3px solid rgb(59, 58, 53);
-        border-radius: 10px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    } */
-
-    #frm {
         position: relative;
 
         top: auto;
@@ -1990,6 +2006,20 @@ body.bright {
         border-radius: 10px;
 
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    } */
+
+    #frm {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        width: 92%;
+        height: fit-content;
+
+        margin: 20px auto 10px;
+
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     #frm h1 {
@@ -1999,7 +2029,7 @@ body.bright {
         font-weight: 300;
     }
 
-    .bx {
+    /* .bx {
         height: 35px;
         width: 45vw;
         margin-left: 22px;
@@ -2010,7 +2040,7 @@ body.bright {
         font-weight: 400;
         padding: 3px;
         margin-bottom: 4px;
-    }
+    } */
 
     .bx:active {
         outline: 2px solid cadetblue;
@@ -2027,11 +2057,38 @@ body.bright {
         margin-bottom: 4px;
     }
 
-    .tx {
+    /* .tx {
         height: 80px;
         width: 50vw;
         margin-left: 22px;
         font-size: medium;
+        font-family: cursive;
+        font-weight: 500;
+        padding: 3px;
+        text-align: center;
+    } */
+
+    .bx {
+        height: 35px;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+
+        text-align: center;
+        font-size: 16px;
+        font-family: cursive;
+        font-weight: 400;
+        padding: 3px;
+        margin-bottom: 4px;
+    }
+
+    .tx {
+        height: 80px;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+
+        font-size: 16px;
         font-family: cursive;
         font-weight: 500;
         padding: 3px;
@@ -2050,11 +2107,21 @@ body.bright {
         justify-content: center;
     }
 
-    #subbtn {
+    /* #subbtn {
         margin-top: 12px;
         margin-left: 15px;
         height: 5vh;
         width: 20dvw;
+        border: 3px solid black;
+        border-radius: 50px;
+        font-size: large;
+    } */
+
+    #subbtn {
+        margin-top: 12px;
+        margin-left: 0;
+        height: 45px;
+        width: 120px;
         border: 3px solid black;
         border-radius: 50px;
         font-size: large;
@@ -2102,27 +2169,6 @@ body.bright {
         border-radius: 10px;
         rotate: 0deg;
     }
-
-    /* #data {
-        position: absolute;
-        right: 1%;
-        top: 2%;
-        height: 85vh;
-        width: 98dvw;
-        background-color: rgba(238, 231, 231, 0.582);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-    } */
-
-    /* #data {
-        position: absolute;
-        right: 1%;
-        top: 2%;
-        height: auto;
-        min-height: 65vh;
-        width: 98%;
-        box-sizing: border-box;
-    } */
 
     #data {
         position: relative;

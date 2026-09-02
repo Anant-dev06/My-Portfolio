@@ -1,14 +1,30 @@
 // Lenis CDN
-const lenis = new Lenis({
-    duration: 1.8,
-    wheelMultiplier: 0.7,
-    smoothWheel: true,
-});
-function raf(time) {
-    lenis.raf(time);
+// const lenis = new Lenis({
+//     duration: 1.8,
+//     wheelMultiplier: 0.7,
+//     smoothWheel: true,
+// });
+// function raf(time) {
+//     lenis.raf(time);
+//     requestAnimationFrame(raf);
+// }
+// requestAnimationFrame(raf);
+
+if (window.innerWidth >= 700) {
+
+    const lenis = new Lenis({
+        duration: 1.8,
+        wheelMultiplier: 0.7,
+        smoothWheel: true,
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
 }
-requestAnimationFrame(raf);
 
 
 
@@ -47,7 +63,7 @@ main.addEventListener("mousemove", (dets) => {
 let menubtn = document.querySelector("#menubtn");
 let menubox = document.querySelector("#menu-box");
 let menucl = document.querySelector("#menu-cl");
-let menugo = document.querySelector("#menugo");
+let menugo = document.querySelector(".menugo");
 function openMenu() {
     menubox.style.display = "block";
 
