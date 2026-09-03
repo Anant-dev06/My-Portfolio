@@ -7,7 +7,7 @@
 html,
 body {
     height: 100%;
-    width: screen;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -17,17 +17,12 @@ body {
 
 @media (max-width: 600px) {
 
-    html {
-        overflow-anchor: none;
-    }
-
+    html,
     body {
-        overflow-anchor: none;
-    }
-
-    #frm {
-        scroll-margin-top: 0;
-        scroll-margin-bottom: 20px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-anchor: auto;
+        scroll-behavior: auto;
     }
 }
 
@@ -87,6 +82,27 @@ body.bright {
     color: var(--head-text);
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    background: #000;
+
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.loader-video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
 
 @media (max-width:600px) {
     .loader {
@@ -122,7 +138,6 @@ body.bright {
     position: relative;
     height: 100dvh;
     width: 100%;
-    /* background-color: #0F0F12; */
     border: 1px solid transparent;
 }
 
@@ -155,7 +170,6 @@ body.bright {
     right: 0%;
     height: 9dvh;
     width: 22dvw;
-    /* background-color: #bcb4b4; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -225,11 +239,6 @@ body.bright {
     display: none;
 }
 
-/* .active {
-    background-color: #9CA3AF;
-    color: black;
-} */
-
 #my-img {
     position: absolute;
     bottom: 0;
@@ -242,7 +251,6 @@ body.bright {
 
 #left-hero {
     height: 30dvh;
-    /* width: 34dvw; */
     width: 520px;
     padding: 20px;
     position: absolute;
@@ -279,7 +287,6 @@ body.bright {
 #right-hero {
     position: relative;
     height: 31dvh;
-    /* width: 33dvw; */
     width: 430px;
     background: var(--card-bg-color);
     color: var(--text-color);
@@ -298,15 +305,6 @@ body.bright {
     transform: translate(90%);
     text-align: center;
 }
-
-/* #right-hero:hover {
-    background: rgba(255, 255, 255, .09);
-
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, .5);
-} */
 
 #hr-ab {
     color: var(--text-color);
@@ -343,7 +341,6 @@ body.bright {
 }
 
 #name {
-    /* color: var(--text-color); */
     z-index: 1;
 }
 
@@ -364,11 +361,22 @@ body.bright {
 }
 
 @media (max-width: 600px) {
+    #main {
+        width: 100svw;
+    }
+
+    #hero {
+        position: relative;
+        height: 100svh;
+        width: 100%;
+        border: 1px solid transparent;
+    }
+
     #navbar {
         position: absolute;
         top: 0;
         left: 1%;
-        height: 6vh;
+        height: 6svh;
         width: 30%;
         border-radius: 10px;
         overflow: hidden;
@@ -391,9 +399,8 @@ body.bright {
         position: absolute;
         top: 2%;
         right: 0%;
-        height: 5dvh;
+        height: 5svh;
         width: 50dvw;
-        /* background-color: #bcb4b4; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -426,7 +433,7 @@ body.bright {
         position: absolute;
         top: 7%;
         right: 0%;
-        height: 30dvh;
+        height: 30svh;
         width: 50%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -467,18 +474,16 @@ body.bright {
     #my-img {
         position: absolute;
         top: 25%;
-        transform: translate(28%);
-        height: 60dvh;
+        transform: translate(25%);
+        height: 60svh;
         background-color: transparent;
         width: auto;
-        /* z-index: 2; */
     }
 
     #left-hero {
         position: absolute;
         top: 7%;
-        height: 20dvh;
-        /* width: 34dvw; */
+        height: 2svh;
         width: 520px;
         padding: 20px;
         position: absolute;
@@ -488,7 +493,7 @@ body.bright {
 
 
     #hr-btn {
-        height: 5dvh;
+        height: 5svh;
         width: 40dvw;
         font-size: small;
         border: 2px solid gray;
@@ -533,7 +538,6 @@ body.bright {
     }
 
     #name {
-        /* color: var(--text-color); */
         z-index: 1;
     }
 
@@ -601,7 +605,6 @@ body.bright {
 }
 
 #about p {
-    /* color: var(--text-color); */
     font-size: x-large;
     padding-top: 15px;
 }
@@ -620,7 +623,6 @@ body.bright {
     height: 60%;
     width: 95%;
     justify-self: center;
-    /* background-color: aqua; */
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
@@ -653,7 +655,7 @@ body.bright {
 
 @media (max-width: 600px) {
     #about {
-        height: 100vh;
+        height: 100svh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -682,7 +684,7 @@ body.bright {
     #unidiv {
         display: flex;
         justify-self: center;
-        height: 10dvh;
+        height: 10svh;
         width: 98dvw;
         transform: translate(2%);
         background-color: rgba(255, 127, 80, 0.266);
@@ -702,7 +704,7 @@ body.bright {
 
     #about h1 {
         width: 100%;
-        font-size: 7dvh;
+        font-size: 7svh;
         color: var(--head-text);
         text-align: center;
         padding-top: 15px;
@@ -732,7 +734,7 @@ body.bright {
     }
 
     #boxes {
-        height: 25dvh;
+        height: 25svh;
         width: 100dvw;
         transform: translate(2%);
         justify-content: center;
@@ -750,7 +752,7 @@ body.bright {
         justify-self: center;
         justify-content: space-between;
         align-items: center;
-        height: 10dvh;
+        height: 10svh;
         width: 49%;
         padding: 10px;
         border: 4px solid black;
@@ -895,7 +897,7 @@ body.bright {
 
 @media (max-width:600px) {
     #skills {
-        height: 170vh;
+        height: 170svh;
         width: 100%;
         border: 1px solid transparent;
     }
@@ -913,7 +915,7 @@ body.bright {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        height: 150dvh;
+        height: 150svh;
         width: 95%;
         justify-self: center;
         margin-top: 25px;
@@ -956,10 +958,6 @@ body.bright {
             0 20px 50px rgba(0, 0, 0, .45),
             inset 0 1px 0 rgba(255, 255, 255, .08);
     }
-
-    /* .sb:hover::before {
-        left: 170%;
-    } */
 
     .sb-item {
         height: 95%;
@@ -1021,8 +1019,6 @@ body.bright {
 }
 
 #pro-head {
-    /* writing-mode: vertical-rl;
-    text-orientation: mixed; */
     font-size: 65px;
     text-align: center;
     letter-spacing: -2px;
@@ -1033,10 +1029,8 @@ body.bright {
 #pro-box {
     position: absolute;
     top: 6%;
-    /* right: 3%; */
     height: 95%;
     width: 100%;
-    /* background-color: antiquewhite; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1159,43 +1153,19 @@ body.bright {
 }
 
 @media (max-width: 600px) {
-    /* #project {
-        position: relative;
-        height: 340svh;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    } */
-
     #project {
-        position: relative;
         width: 100%;
-        height: auto;
+        height: 330svh;
         margin-top: 10px;
         margin-bottom: 5px;
     }
 
     #pro-head {
-        /* writing-mode: vertical-rl;
-        text-orientation: mixed; */
         font-size: 40px;
         text-align: center;
         letter-spacing: -2px;
         color: var(--head-text);
     }
-
-    /* 
-    #pro-box {
-        position: absolute;
-        top: 2%;
-        height: 95%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-    } */
 
     #pro-box {
         position: relative;
@@ -1248,7 +1218,6 @@ body.bright {
 
     .pr-detail {
         transform: translate(0%);
-        /* display: flex; */
         height: 55%;
         width: 100%;
         background-color: var(--card-bg-color);
@@ -1278,7 +1247,7 @@ body.bright {
     }
 
     .btn-box {
-        height: 12dvh;
+        height: 12svh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -1291,7 +1260,7 @@ body.bright {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 6dvh;
+        height: 6svh;
         width: 30dvw;
         border: 3px double var(--border-color);
         border-radius: 10px;
@@ -1313,7 +1282,7 @@ body.bright {
     }
 
     .mc {
-        height: 18dvh;
+        height: 18svh;
         width: 90%;
         background-color: var(--card-bg-color);
         border: 4px solid rgb(149, 149, 153);
@@ -1363,8 +1332,6 @@ body.bright {
 .edu-card {
     height: 30%;
     width: 60%;
-    /* border: 3px solid darkgray;
-    background-color: #bcb4b489; */
     background: var(--card-bg-color);
     border: 1px solid rgba(255, 255, 255, .12);
     backdrop-filter: blur(10px);
@@ -1378,7 +1345,6 @@ body.bright {
 .eb-num {
     height: 90%;
     width: 20%;
-    /* background-color: cornflowerblue; */
     display: flex;
     align-items: center;
     color: var(--text-color);
@@ -1395,7 +1361,6 @@ body.bright {
 .eb-detail {
     height: 94%;
     width: 70%;
-    /* background-color: cyan; */
     padding: 5px;
     line-height: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -1454,10 +1419,9 @@ body.bright {
 
 @media (max-width:600px) {
     #education {
-        height: auto;
-        min-height: 80svh;
+        height: 100svh;
         width: 100%;
-        margin-top: 1px;
+        margin-top: 5px;
         margin-bottom: 20px;
         border: 1px solid transparent;
         display: flex;
@@ -1469,20 +1433,21 @@ body.bright {
         color: var(--head-text);
         font-size: 40px;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 5svh;
     }
 
     #edu-box {
-        height: 70svh;
+        height: 80svh;
         width: 95%;
         display: flex;
         flex-wrap: wrap;
-        position: relative;
+        /* position: relative; */
+        gap: 20px;
     }
 
     .edu-card {
-        height: 20dvh;
-        width: 90%;
+        height: 22svh;
+        width: 95%;
         /* border: 3px solid darkgray;
         background-color: #bcb4b489; */
         background: var(--card-bg-color);
@@ -1556,19 +1521,19 @@ body.bright {
 
     #eb-1 {
         position: absolute;
-        left: 5%;
+        left: 2%;
         top: 2%;
     }
 
     #eb-2 {
         position: absolute;
-        right: 5%;
+        left: 2%;
         top: 35%;
     }
 
     #eb-3 {
         position: absolute;
-        left: 5%;
+        left: 2%;
         top: 68%;
     }
 }
@@ -1597,7 +1562,6 @@ body.bright {
     justify-self: center;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: antiquewhite; */
 }
 
 .c-card {
@@ -1606,7 +1570,6 @@ body.bright {
     width: 30%;
     border: 3px solid #9CA3AF;
     border-radius: 10px;
-    /* background-color: rgb(158, 103, 20); */
     overflow: hidden;
 }
 
@@ -1619,15 +1582,6 @@ body.bright {
 
 .c-over {
     display: none;
-    /* position: absolute;
-    bottom: 0;
-    right: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: #37373877;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center; */
 
 }
 
@@ -1640,8 +1594,7 @@ body.bright {
 
 @media (max-width:600px) {
     #certification {
-        height: auto;
-        min-height: 140svh;
+        height: 140svh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -1653,7 +1606,6 @@ body.bright {
         color: var(--head-text);
         font-size: 40px;
         text-align: center;
-        margin-top: 5dvh;
     }
 
     #cert-box {
@@ -1670,7 +1622,7 @@ body.bright {
 
     .c-card {
         display: flex;
-        height: 35dvh;
+        height: 35svh;
         width: 100%;
         border: 3px solid #9CA3AF;
         border-radius: 10px;
@@ -1697,18 +1649,8 @@ body.bright {
     position: relative;
     height: 100dvh;
     width: screen;
-    /* background-color: rgb(195, 193, 193); */
     background-color: transparent;
 }
-
-/* #see-off {
-    position: absolute;
-    bottom: 12.5%;
-    left: 5%;
-    height: 70dvh;
-    width: auto;
-    overflow: hidden;
-} */
 
 #meet {
     position: absolute;
@@ -1895,7 +1837,7 @@ body.bright {
         position: absolute;
         right: 10%;
         top: 62%;
-        height: 25vh;
+        height: 25svh;
         width: 80dvw;
         background-color: rgba(247, 249, 250, 0.432);
         backdrop-filter: blur(10px);
