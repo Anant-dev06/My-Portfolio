@@ -1,15 +1,3 @@
-// Lenis CDN
-// const lenis = new Lenis({
-//     duration: 1.8,
-//     wheelMultiplier: 0.7,
-//     smoothWheel: true,
-// });
-// function raf(time) {
-//     lenis.raf(time);
-//     requestAnimationFrame(raf);
-// }
-// requestAnimationFrame(raf);
-
 if (window.innerWidth >= 700) {
 
     const lenis = new Lenis({
@@ -44,19 +32,6 @@ if (sessionStorage.getItem("loaderShown")) {
     });
 }
 
-
-
-// // For cursor effect
-// let main = document.querySelector("#main");
-// let cursor = document.querySelector("#cursor");
-// main.addEventListener("mousemove", (dets) => {
-//     gsap.to(cursor, {
-//         x: dets.x,
-//         y: dets.y,
-//         duration: 0.5,
-//         ease: "back.out"
-//     })
-// })
 
 
 // For menu effect
@@ -127,6 +102,7 @@ if (window.innerWidth >= 1024) {
         })
     })
 }
+
 
 
 
