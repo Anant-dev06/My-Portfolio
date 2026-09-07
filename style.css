@@ -2143,3 +2143,206 @@ body.bright {
         background-color: transparent;
     }
 }
+
+
+/* Tablet screen Responsivness */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .loader {
+        width: 100%;
+        height: 95dvh;
+        overflow: hidden;
+    }
+
+    .loader-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    #main {
+        width: 100svw;
+    }
+
+    #hero {
+        position: relative;
+        height: 100svh;
+        width: 100%;
+        border: 1px solid transparent;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 1dvh;
+        left: 1%;
+        height: 5svh;
+        width: 30%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 6px;
+        margin-left: 6px;
+        transform: translate(1%);
+        background-color: #1b1b19;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+    }
+
+    #navbar p {
+        font-size: xx-large;
+    }
+
+    #menu-container {
+        position: absolute;
+        top: 1%;
+        right: 2%;
+        height: 5svh;
+        width: 35dvw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-icon {
+        height: 90%;
+        width: 20%;
+        background-color: #48484a55;
+        box-shadow:
+            0 25px 60px rgba(0, 0, 0, .5);
+        backdrop-filter: blur(10px);
+        border: 3px solid rgb(117, 111, 111);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        color: var(--text-color);
+    }
+
+    .menu-icon a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    #menu-box {
+        display: none;
+        position: absolute;
+        top: 6%;
+        right: 0%;
+        height: 30svh;
+        width: 35%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: var(--card-bg-color);
+        color: var(--card-text);
+        backdrop-filter: blur(10px);
+        z-index: 4;
+    }
+
+    #menu-item {
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #menu-item a {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    #menu-item a:hover {
+        color: burlywood;
+        transition: 0.6s ease;
+    }
+
+    #menu-cl {
+        display: none;
+    }
+
+    #ic-bright {
+        display: none;
+    }
+
+    #my-img {
+        position: absolute;
+        top: 23%;
+        transform: translate(25%);
+        height: 80svh;
+        background-color: transparent;
+        width: auto;
+    }
+
+    #left-hero {
+        position: absolute;
+        top: 10%;
+        height: 2svh;
+        width: 520px;
+        padding: 20px;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+
+    #hr-btn {
+        height: 5svh;
+        width: 30dvw;
+        font-size: large;
+        border: 2px solid gray;
+        border-radius: 50px;
+        padding-bottom: 1px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    #hr-role {
+        margin-top: 10px;
+        font-size: xx-large;
+        font-weight: 700;
+        color: var(--text-color);
+        line-height: 45px;
+    }
+
+    #hr-btn:hover {
+        color: var(--name-text);
+    }
+
+    #right-hero {
+        display: block;
+    }
+
+    #hr-ab {
+        color: var(--text-color);
+        font-size: medium;
+    }
+
+    #name {
+        position: absolute;
+        bottom: 4%;
+        /* transform: translateX(-48%); */
+        text-align: center;
+        font-size: 70px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        /* white-space: wrap; */
+        line-height: 1;
+        color: var(--name-text);
+    }
+
+    #name {
+        z-index: 100;
+    }
+
+    #stroke {
+        display: none;
+    }
+}
