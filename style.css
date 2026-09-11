@@ -132,13 +132,15 @@ body.bright {
 @media (max-width: 600px) {
     .loader {
         width: 100%;
-        height: 95dvh;
+        height: 100dvh;
         overflow: hidden;
+        background-color: #121218;
     }
 
     .loader-video {
+        margin-top: 15dvh;
         width: 100%;
-        height: 100%;
+        height: 70%;
         object-fit: cover;
         object-position: center;
     }
@@ -208,6 +210,11 @@ body.bright {
     color: var(--text-color);
 }
 
+.menu-icon:hover {
+    border: 4px dotted var(--border-color);
+    font-size: xx-large;
+}
+
 .menu-icon a {
     text-decoration: none;
     color: var(--text-color);
@@ -222,7 +229,8 @@ body.bright {
     width: 23%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: var(--card-bg-color);
+    /* background-color: var(--card-bg-color); */
+    background-color: transparent;
     color: var(--card-text);
     backdrop-filter: blur(10px);
 }
@@ -444,6 +452,11 @@ body.bright {
         color: var(--text-color);
     }
 
+    .menu-icon:hover {
+        border: 4px dotted var(--border-color);
+        font-size: x-large;
+    }
+
     #menu-box {
         display: none;
         position: absolute;
@@ -458,6 +471,7 @@ body.bright {
         backdrop-filter: blur(10px);
         z-index: 4;
     }
+
 
     #menu-item {
         font-size: medium;
@@ -1713,6 +1727,8 @@ body.bright {
     margin-bottom: 10px;
 }
 
+
+
 #meet i {
     display: block;
     font-size: 25px;
@@ -1722,9 +1738,19 @@ body.bright {
 }
 
 .a-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
     text-decoration: none;
     color: black;
+    font-size: x-large;
 }
+
+.a-link i {
+    display: inline-block;
+    font-size: xx-large;
+}
+
 
 #frm {
     position: absolute;
@@ -1910,7 +1936,7 @@ body.bright {
 
     #meet-m i {
         display: block;
-        font-size: large;
+        font-size: x-large;
         font-weight: 500;
         padding: 5px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -1941,8 +1967,17 @@ body.bright {
     }
 
     .a-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
         text-decoration: none;
         color: black;
+        font-size: x-large;
+    }
+
+    .a-link i {
+        display: inline-block;
+        font-size: x-large;
     }
 
     /* #frm {
@@ -3118,7 +3153,7 @@ body.bright {
 
     #tks {
         position: absolute;
-        bottom: 1%;
+        bottom: 0%;
         left: 0%;
         height: 6vh;
         width: 100%;

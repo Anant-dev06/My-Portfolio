@@ -21,12 +21,9 @@ const loader = document.querySelector(".loader");
 const video = document.querySelector(".loader-video");
 
 if (sessionStorage.getItem("loaderShown")) {
-    // Loader already shown in this browser session
     loader.style.display = "none";
 } else {
-    // First visit in this session
     sessionStorage.setItem("loaderShown", "true");
-
     video.addEventListener("ended", () => {
         loader.style.display = "none";
     });
@@ -77,7 +74,7 @@ menubtn.addEventListener("click", openMenu);
 menucl.addEventListener("click", closeMenu);
 
 // Close menu when a menu item is clicked
-let menuItems = document.querySelectorAll("#menugo");
+let menuItems = document.querySelectorAll(".menugo");
 
 menuItems.forEach((item) => {
     item.addEventListener("click", closeMenu);
