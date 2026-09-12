@@ -462,24 +462,24 @@ body.bright {
         position: absolute;
         top: 7%;
         right: 0%;
-        height: 30svh;
-        width: 50%;
+        height: 22svh;
+        width: 35%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         background-color: var(--card-bg-color);
         color: var(--card-text);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(0px);
         z-index: 4;
     }
 
 
     #menu-item {
-        font-size: medium;
+        font-size: small;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        padding: 10px;
+        gap: 5px;
+        padding: 5px;
     }
 
     #menu-item a {
@@ -1115,6 +1115,7 @@ body.bright {
 }
 
 .pr-img {
+    position: relative;
     height: 100%;
     width: 30%;
     background-color: darkgreen;
@@ -1126,6 +1127,26 @@ body.bright {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.pr-img-over {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2%;
+    left: 1%;
+    height: 4dvh;
+    width: 10dvw;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 99999;
+    background-color: #f7f7f853;
+    backdrop-filter: blur(5px);
+}
+
+.pr-img-over {
+    font-size: large;
 }
 
 .pr-detail {

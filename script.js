@@ -124,12 +124,10 @@ brightbtn.addEventListener("click", () => {
 
 
 // Project card animation
-
 if (window.innerWidth >= 1024) {
     let pc = document.querySelectorAll(".pr-c");
 
     pc.forEach((card) => {
-
         let detail = card.querySelector(".pr-detail");
 
         card.addEventListener("mouseenter", () => {
@@ -138,6 +136,7 @@ if (window.innerWidth >= 1024) {
                 duration: 0.8,
                 opacity: 1
             });
+            ovr.style.visibility = "visible";
         });
 
         card.addEventListener("mouseleave", () => {
@@ -146,6 +145,7 @@ if (window.innerWidth >= 1024) {
                 duration: 0.8,
                 opacity: 0
             });
+            ovr.style.visibility = "hidden";
         });
 
     });
