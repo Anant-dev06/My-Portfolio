@@ -15,6 +15,23 @@ body {
     background-color: #0F0F12;
 }
 
+body.loader-active {
+    overflow: hidden;
+}
+
+/* .loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+} */
+
+html.loader-active,
+body.loader-active {
+    overflow: hidden !important;
+    height: 100%;
+    touch-action: none;
+}
+
 @media (max-width: 600px) {
 
     html,
@@ -84,6 +101,7 @@ body.bright {
 
 .loader {
     position: fixed;
+    inset: 0;
     top: 0;
     left: 0;
 
@@ -1276,7 +1294,7 @@ body.bright {
         top: 2%;
         left: 1%;
         height: 4dvh;
-        width: 35dvw;
+        width: 38dvw;
         border: 1px solid black;
         border-radius: 10px;
         z-index: 99999;

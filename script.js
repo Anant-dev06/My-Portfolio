@@ -1,6 +1,13 @@
+
+const loader = document.querySelector(".loader");
+const video = document.querySelector(".loader-video");
+
+// Lenis smooth scroll
+let lenis;
+
 if (window.innerWidth >= 700) {
 
-    const lenis = new Lenis({
+    lenis = new Lenis({
         duration: 1.8,
         wheelMultiplier: 0.7,
         smoothWheel: true,
@@ -12,23 +19,55 @@ if (window.innerWidth >= 700) {
     }
 
     requestAnimationFrame(raf);
+
 }
 
+// Disable scrolling
+function disableScroll() {
 
+    document.body.classList.add("loader-active");
 
-// Loader screen
-const loader = document.querySelector(".loader");
-const video = document.querySelector(".loader-video");
+    if (lenis) {
+        lenis.stop();
+    }
 
+}
+
+// Enable scrolling
+function enableScroll() {
+
+    document.body.classList.remove("loader-active");
+
+    if (lenis) {
+        lenis.start();
+    }
+
+}
+
+// Loader logic
 if (sessionStorage.getItem("loaderShown")) {
-    loader.style.display = "none";
-} else {
-    sessionStorage.setItem("loaderShown", "true");
-    video.addEventListener("ended", () => {
-        loader.style.display = "none";
-    });
-}
 
+    loader.style.display = "none";
+
+    enableScroll();
+
+} else {
+
+    sessionStorage.setItem("loaderShown", "true");
+
+    // Stop scroll while video plays
+    disableScroll();
+
+    video.addEventListener("ended", () => {
+
+        loader.style.display = "none";
+
+        // Start scroll after video ends
+        enableScroll();
+
+    });
+
+}
 
 
 // For menu effect
