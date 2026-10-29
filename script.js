@@ -70,6 +70,7 @@ if (sessionStorage.getItem("loaderShown")) {
 }
 
 
+
 // For menu effect
 let menubtn = document.querySelector("#menubtn");
 let menubox = document.querySelector("#menu-box");
