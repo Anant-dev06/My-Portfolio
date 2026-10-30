@@ -497,7 +497,7 @@ body.bright {
     #my-img {
         position: absolute;
         top: 30%;
-        left: -16%;
+        left: -15%;
         height: 68svh;
         background-color: transparent;
         width: auto;
@@ -518,8 +518,8 @@ body.bright {
 
     #hr-btn {
         height: 5svh;
-        width: 40dvw;
-        font-size: small;
+        width: 49dvw;
+        font-size: medium;
         border: 2px solid gray;
         border-radius: 50px;
         padding-bottom: 1px;
@@ -528,11 +528,11 @@ body.bright {
     }
 
     #hr-role {
-        margin-top: 5px;
-        font-size: large;
+        margin-top: 8px;
+        font-size: x-large;
         font-weight: 700;
         color: var(--text-color);
-        line-height: 30px;
+        line-height: 34px;
     }
 
     #hr-btn:hover {
@@ -553,7 +553,7 @@ body.bright {
         left: 40%;
         bottom: 4%;
         transform: translateX(-50%);
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 900;
         letter-spacing: 2px;
         white-space: wrap;
@@ -705,7 +705,7 @@ body.bright {
     #about-detail {
         height: 95%;
         width: 95%;
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
 
@@ -744,8 +744,8 @@ body.bright {
 
     #about p {
         /* color: var(--text-color); */
-        font-size: medium;
-        padding-top: 0px;
+        font-size: large;
+        padding-top: 5px;
         text-align: center;
     }
 
@@ -1017,19 +1017,19 @@ body.bright {
 
     .sb-item i {
         display: block;
-        font-size: 50px;
+        font-size: 55px;
         margin-top: 3px;
         color: green;
     }
 
     .sb-item h1 {
-        font-size: large;
+        font-size: x-large;
         color: var(--text-color);
     }
 
     .sb-item p {
         margin-top: 3px;
-        font-size: medium;
+        font-size: small;
         color: var(--text-color);
     }
 
@@ -1334,7 +1334,7 @@ body.bright {
 
     .pr-p {
         text-align: center;
-        font-size: medium;
+        font-size: small;
         margin-top: 5px;
         color: var(--card-text);
     }
@@ -1555,11 +1555,6 @@ body.bright {
 
     .eb-num {
         display: none;
-        height: 90%;
-        width: 0%;
-        /* background-color: cornflowerblue; */
-        align-items: center;
-        color: var(--text-color);
     }
 
     .eb-num p {
@@ -1575,15 +1570,15 @@ body.bright {
         width: 100%;
         /* background-color: cyan; */
         padding: 5px;
-        line-height: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 28px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .ed-title {
         font-size: large;
         margin-bottom: 5px;
         font-weight: 700;
-        padding-bottom: 1px;
+        padding-bottom: 5px;
         border-bottom: 2px solid gray;
         color: var(--text-color);
     }
@@ -1715,7 +1710,7 @@ body.bright {
 
     .c-card {
         display: flex;
-        height: 35svh;
+        height: 32svh;
         width: 100%;
         border: 3px solid #9CA3AF;
         border-radius: 10px;
