@@ -2071,10 +2071,9 @@ body.bright {
         position: absolute;
         top: 98%;
         right: 1%;
-        height: fit-content;
         padding: 20px;
         line-height: 40px;
-        height: 160%;
+        height: 180%;
         width: 98%;
         border-radius: 16px;
 
@@ -2163,7 +2162,7 @@ body.bright {
 
     .banner-name {
         left: 25px;
-        top: 20px;
+        top: 25px;
     }
 
     .banner-name h1 {
@@ -2266,7 +2265,7 @@ body.bright {
         position: absolute;
 
         left: 4%;
-        top: -6%;
+        top: -8%;
 
         width: 30%;
         height: 13dvh;
@@ -2296,7 +2295,7 @@ body.bright {
 
     .user-info {
         width: 100%;
-        margin-top: -7px;
+        margin-top: 8px;
     }
 
 
